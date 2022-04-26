@@ -1,0 +1,1431 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 26 15:57:18 2022
+# Process ID: 9340
+# Current directory: C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/design_1_wrapper.vds
+# Journal file: C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/caraccmv/Desktop/git/EE316P6/IPRepo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7120 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 814.750 ; gain = 176.398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:28]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:840' bound to instance 'design_1_i' of component 'design_1' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:858]
+INFO: [Synth 8-3491] module 'design_1_S_AXI_VGA_BRAM_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_S_AXI_VGA_BRAM_0_0/synth/design_1_S_AXI_VGA_BRAM_0_0.vhd:56' bound to instance 'S_AXI_VGA_BRAM_0' of component 'design_1_S_AXI_VGA_BRAM_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:1060]
+INFO: [Synth 8-638] synthesizing module 'design_1_S_AXI_VGA_BRAM_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_S_AXI_VGA_BRAM_0_0/synth/design_1_S_AXI_VGA_BRAM_0_0.vhd:88]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'S_AXI_VGA_BRAM_v1_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0.vhd:5' bound to instance 'U0' of component 'S_AXI_VGA_BRAM_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_S_AXI_VGA_BRAM_0_0/synth/design_1_S_AXI_VGA_BRAM_0_0.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'S_AXI_VGA_BRAM_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0.vhd:54]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'S_AXI_VGA_BRAM_v1_0_S00_AXI' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:5' bound to instance 'S_AXI_VGA_BRAM_v1_0_S00_AXI_inst' of component 'S_AXI_VGA_BRAM_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'S_AXI_VGA_BRAM_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:92]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'VGA_BRAM' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/VGA_BRAM.vhd:28' bound to instance 'BRAM_VGA' of component 'VGA_BRAM' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:375]
+INFO: [Synth 8-638] synthesizing module 'VGA_BRAM' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/VGA_BRAM.vhd:47]
+	Parameter WIDTHA bound to: 8 - type: integer 
+	Parameter SIZEA bound to: 38400 - type: integer 
+	Parameter ADDRWIDTHA bound to: 16 - type: integer 
+	Parameter WIDTHB bound to: 8 - type: integer 
+	Parameter SIZEB bound to: 38400 - type: integer 
+	Parameter ADDRWIDTHB bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'asymmetric_ram' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/asymmetric_ram.vhd:15' bound to instance 'BRAM' of component 'asymmetric_ram' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/VGA_BRAM.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'asymmetric_ram' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/asymmetric_ram.vhd:39]
+	Parameter WIDTHA bound to: 8 - type: integer 
+	Parameter SIZEA bound to: 38400 - type: integer 
+	Parameter ADDRWIDTHA bound to: 16 - type: integer 
+	Parameter WIDTHB bound to: 8 - type: integer 
+	Parameter SIZEB bound to: 38400 - type: integer 
+	Parameter ADDRWIDTHB bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'asymmetric_ram' (1#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/asymmetric_ram.vhd:39]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:30' bound to instance 'vga_sync_1' of component 'vga_sync' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/VGA_BRAM.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:47]
+WARNING: [Synth 8-614] signal 'bram_data_i' is read in the process but is not in the sensitivity list [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:157]
+WARNING: [Synth 8-614] signal 'pixel_x' is read in the process but is not in the sensitivity list [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:157]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (2#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'VGA_BRAM' (3#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/VGA_BRAM.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:245]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:246]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:291]
+WARNING: [Synth 8-3848] Net axi_rdata in module/entity S_AXI_VGA_BRAM_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:121]
+INFO: [Synth 8-256] done synthesizing module 'S_AXI_VGA_BRAM_v1_0_S00_AXI' (4#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'S_AXI_VGA_BRAM_v1_0' (5#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'design_1_S_AXI_VGA_BRAM_0_0' (6#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_S_AXI_VGA_BRAM_0_0/synth/design_1_S_AXI_VGA_BRAM_0_0.vhd:88]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:1090]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (7#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (8#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (9#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (10#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (11#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
+INFO: [Synth 8-3491] module 'design_1_keyboard_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_keyboard_0_0/synth/design_1_keyboard_0_0.vhd:56' bound to instance 'keyboard_0' of component 'design_1_keyboard_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:1097]
+INFO: [Synth 8-638] synthesizing module 'design_1_keyboard_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_keyboard_0_0/synth/design_1_keyboard_0_0.vhd:86]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'keyboard_v1_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0.vhd:5' bound to instance 'U0' of component 'keyboard_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_keyboard_0_0/synth/design_1_keyboard_0_0.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'keyboard_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0.vhd:52]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'keyboard_v1_0_S00_AXI' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:5' bound to instance 'keyboard_v1_0_S00_AXI_inst' of component 'keyboard_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'keyboard_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:89]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:242]
+INFO: [Synth 8-226] default block is never used [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:372]
+WARNING: [Synth 8-614] signal 'ps2_code' is read in the process but is not in the sensitivity list [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:367]
+	Parameter clk_freq bound to: 50000000 - type: integer 
+	Parameter debounce_counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ps2_keyboard' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/ps2_keyboard.vhd:26' bound to instance 'U0' of component 'ps2_keyboard' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:406]
+INFO: [Synth 8-638] synthesizing module 'ps2_keyboard' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/ps2_keyboard.vhd:38]
+	Parameter clk_freq bound to: 50000000 - type: integer 
+	Parameter debounce_counter_size bound to: 8 - type: integer 
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/debounce.vhd:27' bound to instance 'debounce_ps2_clk' of component 'debounce' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/ps2_keyboard.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'debounce' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/debounce.vhd:36]
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (12#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/debounce.vhd:36]
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/debounce.vhd:27' bound to instance 'debounce_ps2_data' of component 'debounce' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/ps2_keyboard.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'ps2_keyboard' (13#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/ps2_keyboard.vhd:38]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:235]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:240]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_v1_0_S00_AXI' (14#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_v1_0' (15#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'design_1_keyboard_0_0' (16#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_keyboard_0_0/synth/design_1_keyboard_0_0.vhd:86]
+INFO: [Synth 8-3491] module 'design_1_manager_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_manager_0_0/synth/design_1_manager_0_0.vhd:56' bound to instance 'manager_0' of component 'design_1_manager_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:1125]
+INFO: [Synth 8-638] synthesizing module 'design_1_manager_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_manager_0_0/synth/design_1_manager_0_0.vhd:83]
+	Parameter C_M00_AXI_START_DATA_VALUE bound to: 32'b10101010000000000000000000000000 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_M00_PS2_SLAVE_BASE_ADDR bound to: 32'b01000100101000010000000000000000 
+	Parameter C_M00_VIDEOMEM_BASE_ADDR bound to: 32'b01000100101000000000000000000000 
+INFO: [Synth 8-3491] module 'manager_v1_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:5' bound to instance 'U0' of component 'manager_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_manager_0_0/synth/design_1_manager_0_0.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'manager_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:56]
+	Parameter C_M00_PS2_SLAVE_BASE_ADDR bound to: 1151401984 - type: integer 
+	Parameter C_M00_VIDEOMEM_BASE_ADDR bound to: 1151336448 - type: integer 
+	Parameter C_M00_AXI_START_DATA_VALUE bound to: -1442840576 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_M_PS2_SLAVE_BASE_ADDR bound to: 1151401984 - type: integer 
+	Parameter C_M_VIDEOMEM_BASE_ADDR bound to: 1151336448 - type: integer 
+	Parameter C_M_START_DATA_VALUE bound to: -1442840576 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_TRANSACTIONS_NUM bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'manager_v1_0_M00_AXI' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:5' bound to instance 'manager_v1_0_M00_AXI_inst' of component 'manager_v1_0_M00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'manager_v1_0_M00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:86]
+	Parameter C_M_PS2_SLAVE_BASE_ADDR bound to: 1151401984 - type: integer 
+	Parameter C_M_VIDEOMEM_BASE_ADDR bound to: 1151336448 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-3819] Generic 'c_m_start_data_value' not present in instantiated entity will be ignored [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:101]
+WARNING: [Synth 8-3819] Generic 'c_m_transactions_num' not present in instantiated entity will be ignored [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:101]
+INFO: [Synth 8-3491] module 'char8x12_lookup_table' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/char8x12_lookup_table.vhd:11' bound to instance 'U0' of component 'char8x12_lookup_table' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:582]
+INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/char8x12_lookup_table.vhd:19]
+	Parameter INIT bound to: 12'b000000000000 
+	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000111111010000001100110011011110110000001100000011010010110000001011111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000100000011100001111100111111101111111011111110111011100110110000000000000000000000000000000000000000000000000000000000000000001111110111111111110011111000011111111111111111111011011111111110111111000000000 
+	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000001110000001000001101100111011100110110000010000001110000001000000000000000000000000000000000000000000000000000000000000000000000000000000010000001110000111110011111110011111000011100000010000000000000000000 
+	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000110000011110000111100000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000011100000010000011011001111111011111110011111000111110000111000000100000000000 
+	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000011000001111000110011001100110001111000001100000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111110011111000011110000111110011111111111111111111111111111111111 
+	Parameter INIT_05 bound to: 256'b0000000000000000000000000000000000000000000000000001111000110011001100110011001100011110011011000111100001110000011110000000000000000000000000000000000000000000111111111111111111111111111001111100001110011001100110011100001111100111111111111111111111111111 
+	Parameter INIT_06 bound to: 256'b0000000000000000000000000000000000000000000000000000111000011111000111100001100000011000000110000111100001011000011110000000000000000000000000000000000000000000000000000000000000011000000110000111111000011000001111000110011001100110011001100011110000000000 
+	Parameter INIT_07 bound to: 256'b0000000000000000000000000000000000000000000000000001100011011011011111100011110001100110011001100011110001111110110110110001100000000000000000000000000000000000000000000011000001111000011100000110011001101111011011100110110001101100011111000110110001111100 
+	Parameter INIT_08 bound to: 256'b0000000000000000000000000000000000000000000000000100000001110000011111000111111001111111011111100111110001110000010000000000000000000000000000000000000000000000000000000000000000000001000001110000111100111111011111110011111100001111000001110000000100000000 
+	Parameter INIT_09 bound to: 256'b0000000000000000000000000000000000000000000000000110011001100110000000000110011001100110011001100110011001100110011001100000000000000000000000000000000000000000000000000000000000011000001111000111111000011000000110000001100001111110001111000001100000000000 
+	Parameter INIT_0A bound to: 256'b0000000000000000000000000000000000111110011000110110001100110000001111100111101101101111001111100000011001100011011000110011111000000000000000000000000000000000000000000000000011011000110110001101100011011000110111101101101111011011110110111111111000000000 
+	Parameter INIT_0B bound to: 256'b0000000000000000000000000000000000000000000000000111111000011000001111000111111000011000000110000111111000111100000110000000000000000000000000000000000000000000000000000000000001111111011111110111111100000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0C bound to: 256'b0000000000000000000000000000000000000000000000000001100000111100011111100001100000011000000110000001100000011000000110000000000000000000000000000000000000000000000000000000000000011000000110000001100000011000000110000001100001111110001111000001100000000000 
+	Parameter INIT_0D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000011000000111001111111000011100000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000001110000111111110111000000110000000000000000000000000000 
+	Parameter INIT_0E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000001001000110011011111111011001100010010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111100000011000000110000001100000000000000000000000000000000 
+	Parameter INIT_0F bound to: 256'b0000000000000000000000000000000000000000000000000000000000001000000111000001110000111110001111100011111001111111011111110000000000000000000000000000000000000000000000000000000000000000011111110111111100111110001111100001110000011100000111000000100000000000 
+	Parameter INIT_10 bound to: 256'b0000000000000000000000000000000000000000000000000001100000011000000000000001100000011000001111000011110000111100000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_11 bound to: 256'b0000000000000000000000000000000000000000000000000011011000110110011111110011011000110110011111110011011000110110001101100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000011011000110110001101100 
+	Parameter INIT_12 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100110000011000001100000110000011001100100011000000000000000000000000000000000000000000000000000000000000110000001100000111110011000110110000000111100000111100000001101100011001111100001100000011000 
+	Parameter INIT_13 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000110000001100000011000000000000000000000000000000000000000000000000000001101110001100110111001101101111011011100001110000011100001101100001110000000000 
+	Parameter INIT_14 bound to: 256'b0000000000000000000000000000000000000000000000000000110000011000001100000011000000110000001100000011000000011000000011000000000000000000000000000000000000000000000000000000000000110000000110000000110000001100000011000000110000001100000110000011000000000000 
+	Parameter INIT_15 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000110000001100001111110000110000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011011000011100011111110001110000110110000000000000000000000000 
+	Parameter INIT_16 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000001111111000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000110000001100000011000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_17 bound to: 256'b0000000000000000000000000000000000000000000000000000000100000011000001100000110000011000001100000110000001000000000000000000000000000000000000000000000000000000000000000000000000011000000110000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_18 bound to: 256'b0000000000000000000000000000000000000000000000000111111000011000000110000001100000011000000110000001100000011110000110000000000000000000000000000000000000000000000000000000000000111110011000110110001101100111011011110111101101110011011000110011111000000000 
+	Parameter INIT_19 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000000110000000111100011000000110000001100011001111100000000000000000000000000000000000000000000000000000000001111111011000110000011000001100000110000011000001100011011000110011111000000000 
+	Parameter INIT_1A bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000000110000000111111000000110000001100000011011111110000000000000000000000000000000000000000000000000000000000110000001100000011000001111111001100110011011000111100001110000011000000000000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000000000000000000000000110000001100000011000000110000001100000110000011000001100011011111110000000000000000000000000000000000000000000000000000000000111110011000110110001101100011001111110000001100000011011000110011111000000000 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000000110000001111110011000110110001101100011001111100000000000000000000000000000000000000000000000000000000000111110011000110110001101100011001111100110001101100011011000110011111000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000000000000000110000011000000110000001100000000000000000000001100000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000011000000000000000000000011000000110000000000000000000000000000 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000111111100000000011111110000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000110000000110000000110000000110000011000001100000110000011000000000000 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000000000000000000000001100000011000000000000001100000011000001100000110001101100011001111100000000000000000000000000000000000000000000000000000000000000110000011000001100000110000011000000011000000011000000011000000011000000000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011011000110111111101100011011000110110001100110110000111000000000000000000000000000000000000000000000000000000000001111110000000110011101101111011011110110111101101100011011000110011111000000000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000000000000000000000011110001100110000000110000001100000011000000110000001101100110001111000000000000000000000000000000000000000000000000000000000000111111011001100110011001100110001111100110011001100110011001100011111100000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000000000000000000000111111101100110000001100000011000111110000001100000011001100110011111110000000000000000000000000000000000000000000000000000000000011111001101100110011001100110011001100110011001100110001101100001111100000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110111001100000011000000110110001101100011001111100000000000000000000000000000000000000000000000000000000000001111000001100000011000000110001111100000011000000110011001100111111100000000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000011000000110000001100000011000001111000000000000000000000000000000000000000000000000000000000001100011011000110110001101100011011111110110001101100011011000110110001100000000 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011001100110001101100001111000011110001101100110011011000110000000000000000000000000000000000000000000000000000000000001110000110110001101100011000000110000001100000011000000110000011110000000000 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011011010110110101101101011011111110111011101100011011000110000000000000000000000000000000000000000000000000000000001111111011001100100011000000110000001100000011000000110000001100000111100000000 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011011000110110001101100011001111100000000000000000000000000000000000000000000000000000000001100011011100110111001101111011011011110110011101100111011000110110001100000000 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000000000000011000000011111001101011011000110110001101100011011000110110001101100011001111100000000000000000000000000000000000000000000000000000000000001111000001100000011000000110001111100110011001100110011001100011111100000000 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000000011000000011100000001100000001101100011001111100000000000000000000000000000000000000000000000000000000001100111011001100011011000011110001111100110011001100110011001100011111100000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011011000110110001101100011011000110000000000000000000000000000000000000000000000000000000000111100000110000001100000011000000110000001100000011000010110100111111000000000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011011101110111111101101011011010110110101101100011011000110000000000000000000000000000000000000000000000000000000000001000000111000011011001100011011000110110001101100011011000110110001100000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000111100011001100110011001100110011001100000000000000000000000000000000000000000000000000000000001100011011000110011011000011100000111000001110000110110011000110110001100000000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000000000000000000000011111000000110000001100000011000000110000001100000011000000110001111100000000000000000000000000000000000000000000000000000000001111111011000110100001100000110000011000001100000110001011000110111111100000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000000000000000000011111000110000001100000011000000110000001100000011000000110000001111100000000000000000000000000000000000000000000000000000000001000000011000000011000000011000000011000000011000000011000000010000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000011111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100011001101100001110000001000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000000000000000110111000111011001100110011111000110000000111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000110000001100000011000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011000000110000001101100011001111100000000000000000000000000000000000000000000000000000000000000000000000000000000000111111011001100110011001100110011001100011111000000110000001100000011100000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011000000110111111101100011001111100000000000000000000000000000000000000000000000000000000000000000000000000000000001111110001100110011001100110011001100110011111000110000001100000011100000000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000000111110011000110110000001111110011000110110001101110011011011100000000000000000000000000000000000000000000000000000000000000000000000000000000000011110000011000000110000001100001111110000110000001100011011000011100000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000011000000111000000000000011000000110000000000000000000000000000000000000000000000000000000000001100111011001100110011001100110011011100011011000000110000001100000011100000000 
+	Parameter INIT_35 bound to: 256'b0000000000000000000000000000000000000000000000000110011101100110001101100001111000110110011001100000011000000110000001110000000000000000000000000000000000000000000111100011001100110011001100000011000000110000001100000011100000000000001100000011000000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011011010110110101101111111001101100000000000000000000000000000000000000000000000000000000000000000000000000000000000111100000110000001100000011000000110000001100000011000000110000001110000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011001111100000000000000000000000000000000000000000000000000000000000000000000000000000000001100110011001100110011001100110011001100011101100000000000000000000000000000000 
+	Parameter INIT_38 bound to: 256'b0000000000000000000000000000000001111000001100000011000000111110001100110011001100110011011011100000000000000000000000000000000000000000000000000000000000000000000011110000011000000110001111100110011001100110011001100011101100000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011001110000000111001100011001111100000000000000000000000000000000000000000000000000000000000000000000000000000000000001111000001100000011000000110011001100011101100000000000000000000000000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000000000000000000110111000110011001100110011001100110011001100110000000000000000000000000000000000000000000000000000000000000000000000000000000000111000011011000000110000001100000011000011111100001100000011000000110000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000000000000000000011011001111111011010110110101101100011011000110000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000111000011011001100011011000110110001100000000000000000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000000111110011000110110000001101110011100110110001101100011011000110000000000000000000000000000000000000000000000000000000000000000000000000000000001100011001101100001110000011100001101100110001100000000000000000000000000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000000000000000000000111000000011000000110000001100000001110000110000001100000011000011100000000000000000000000000000000000000000000000000000000000001111111010001100000110000011000001100010111111100000000000000000000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000000000000000000000111000011000000110000001100001110000000110000001100000011000000011100000000000000000000000000000000000000000000000000000000000011000000110000001100000011000000000000001100000011000000110000001100000000000 
+	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000001111111001101100011011000011100000111000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110110110111000000000 
+	Parameter SRVAL bound to: 12'b000000000000 
+	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
+INFO: [Synth 8-113] binding component instance 'bram1' to cell 'RAMB16_S9' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/char8x12_lookup_table.vhd:26]
+	Parameter INIT bound to: 12'b000000000000 
+	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000110111001110011011000110110001101100011011000110000000001100011011000110000000000000000000000000000000000000000000111000011001100011000001111000110011001100011000000110000001100000011011001100011110000000000 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000110111000111011001100110011111000110000000111100000000000110011000111100000110000000000000000000000000000000000000000000000000000111110011000110000001101111111011000110011111000000000000011000001100000110000 
+	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000110111000111011001100110011111000110000000111100000000000011000000011000000011000000000000000000000000000000000000000000000000001101110001110110011001100111110001100000001111000000000001100110011001100000000 
+	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000011100001101100001100000111110011000110000001100000011011000110011111000000000000000000000000000000000000000000000000000000000000000000000000001101110001110110011001100111110001100000001111000000000000111000011011000011100 
+	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011000000110111111101100011001111100000000000110011001100110000000000000000000000000000000000000000000000000000000000111110011000110000001101111111011000110011111000000000001100110001111000001100 
+	Parameter INIT_05 bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000011000000111000000000001100110011001100000000000000000000000000000000000000000000000000000000000111110011000110000001101111111011000110011111000000000001100000001100000001100 
+	Parameter INIT_06 bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000011000000111000000000000011000000011000000011000000000000000000000000000000000000000000000000000111100000110000001100000011000000110000001110000000000011001100011110000011000 
+	Parameter INIT_07 bound to: 256'b0000000000000000000000000000000000000000011000110110001101111111011000110110001100110110000111000000000000011100001101100001110000000000000000000000000000000000000000000000000001100011011000110110001101111111011000110011011000011100000000000110001101100011 
+	Parameter INIT_08 bound to: 256'b0000000000000000000000000000000000000000000000000110111011111011000110111111111011011000110110110110011000000000000000000000000000000000000000000000000000000000000000000111111100000110000001100011111000000110000001100111111100000000000011000001100000110000 
+	Parameter INIT_09 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011001111100000000000110011000111100000110000000000000000000000000000000000000000000000000001111011000110110001101100011011011111110001101100011011000110110001101101111110 
+	Parameter INIT_0A bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011001111100000000000110000000110000000110000000000000000000000000000000000000000000000000000111110011000110110001101100011011000110011111000000000011000110110001100000000 
+	Parameter INIT_0B bound to: 256'b0000000000000000000000000000000000000000000000000110111001110011011000110110001101100011011000110000000000011000000011000000011000000000000000000000000000000000000000000000000001101110011100110110001101100011011000110110001100000000001100110001111000001100 
+	Parameter INIT_0C bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011011000110011111000000000011000110110001100000000000000000000000000000000001111100110001101100000011011100111001101100011011000110110001100000000011000110110001100000000 
+	Parameter INIT_0D bound to: 256'b0000000000000000000000000000000000000000000000000001100000011000001111000110011000000110000001100110011000111100000110000001100000000000000000000000000000000000000000000000000000111110011000110110001101100011011000110110001101100011000000000110001101100011 
+	Parameter INIT_0E bound to: 256'b0000000000000000000000000000000000000000000000000001100000011000001111000001100001111110000110000011110001100110011001100000000000000000000000000000000000000000000000000000000000110110011011110110011000000110000011110000011000000110001101100001110000000000 
+	Parameter INIT_0F bound to: 256'b0000000000000000000000000000000000001110000110110001100000011000000110000001100001111110000110000001100000011000110110000111000000000000000000000000000000000000000000000000000001100011001100110011001100110011011110110011001100000011001111110110001100111111 
+	Parameter INIT_10 bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000011000000111000000000000001100000110000011000000000000000000000000000000000000000000000000000001101110001110110011001100111110001100000001111000000000000011000001100000110000 
+	Parameter INIT_11 bound to: 256'b0000000000000000000000000000000000000000000000000110111000111011001100110011001100110011001100110000000000000110000011000001100000000000000000000000000000000000000000000000000000111110011000110110001101100011011000110011111000000000000011000001100000110000 
+	Parameter INIT_12 bound to: 256'b0000000000000000000000000000000000000000000000000110001101110011011110110110111101100111011000110110001100000000001110110110111000000000000000000000000000000000000000000000000001100111011001100110011001100110011001100011110100000000001110110110111000000000 
+	Parameter INIT_13 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000001110000110110001101100001110000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100000000001111100001101100011011000111100 
+	Parameter INIT_14 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000110000001100000011001111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110011000110110001100000110000011000000110000000000000011000000110000000000 
+	Parameter INIT_15 bound to: 256'b0000000000000000000000000000000001111100000110000011000001101100001110110000011000001100000110000011011001100110010001100000011000000000000000000000000000000000000000000000000000000000011000000110000001100000011111100000000000000000000000000000000000000000 
+	Parameter INIT_16 bound to: 256'b0000000000000000000000000000000000000000000000000001100000111100001111000011110000011000000110000000000000011000000110000000000000000000000000000000000000000000011000000110000001111110011011000111101101110110011011000001100000110110011001100100011000000110 
+	Parameter INIT_17 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000110110011011001101100001101100001101100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110110000110110000110110011011001101100000000000000000000000000 
+	Parameter INIT_18 bound to: 256'b0000000000000000000000000000000001010101101010100101010110101010010101011010101001010101101010100101010110101010010101011010101000000000000000000000000000000000001000101000100000100010100010000010001010001000001000101000100000100010100010000010001010001000 
+	Parameter INIT_19 bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000000000000000000000000000000000111011101011101111101110101110111110111010111011111011101011101111101110101110111110111010111011 
+	Parameter INIT_1A bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110000001111100011000000111110001100000011000000110000001100000000000000000000000000000000000000110000001100000011000000110000001100000011111000110000001100000011000000110000001100000011000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011000111111100000000000000000000000000000000000000000000000000000000000000000000000000000000011011000110110001101100011011000110110001101111011011000110110001101100011011000110110001101100 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011000110111101100000011011110110110001101100011011000110110000000000000000000000000000000000000110000001100000011000000110000001100000011111000110000001111100000000000000000000000000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011000110111101100000011111110000000000000000000000000000000000000000000000000000000000000000011011000110110001101100011011000110110001101100011011000110110001101100011011000110110001101100 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000111111101101100011011000110110001101100011011000110110000000000000000000000000000000000000000000000000000000000000000000000000001111111011000000110111101101100011011000110110001101100 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110000001111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111000110000001111100011000000110000001100000011000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000001111111100011000000110000001100000011000000110000001100000000000000000000000000000000000000000000000000000000000000000000000000011111000000110000001100000011000000110000001100000011000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110001111100000011000000110000001100000011000000110000001100000000000000000000000000000000000000110000001100000011000000110000001100011111111000000000000000000000000000000000000000000000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110001111111100011000000110000001100000011000000110000001100000000000000000000000000000000000000000000000000000000000000000000000000011111111000000000000000000000000000000000000000000000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011001110110001101100011011000110110001101100011011000110110000000000000000000000000000000000000110000001100000011000000110000001100011111000000110001111100000011000000110000001100000011000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011001110110000001100111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100000011001110110001101100011011000110110001101100 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011001110111100000000111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001110111101101100011011000110110001101100 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000001111111100000000111111110000000000000000000000000000000000000000000000000000000000000000011011000110110001101100011011000110110011101100000011001110110001101100011011000110110001101100 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000001111111100000000111111110001100000011000000110000001100000000000000000000000000000000000011011000110110001101100011011000110110011101111000000001110111101101100011011000110110001101100 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110001111111100000000111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111011011000110110001101100011011000110110001101100 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000001111110001101100011011000110110001101100011011000110110000000000000000000000000000000000011011000110110001101100011011000110110011111111000000000000000000000000000000000000000000000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110001111100000011000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111000000110001111100000011000000110000001100000011000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011001111111101101100011011000110110001101100011011000110110000000000000000000000000000000000011011000110110001101100011011000110110011111100000000000000000000000000000000000000000000000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000001111100011000000110000001100000011000000110000001100000000000000000000000000000000000000110000001100000011000000110000001100011111111000110001111111100011000000110000001100000011000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000110000001100000011000000110000001100011111000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000001111000011110000111100001111000011110000111100001111000011110000111100001111000011110000111100000000000000000000000000000000111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100000000000000000000000000000000111100001111000011110000111100001111000011110000111100001111000011110000111100001111000011110000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000011000000110011101101100111011000110011111100011011001100110001111000000000000000000000000000000000000000000000000000000000000000000000000001101110001110110001101100011011000110110011101101101110000000000000000000000000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000000000000000000000011011000110110001101100011011000110110011111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000001100000011000000110000001100000011001000110011001100111111100000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000000000000000000000001111000110011001100110011001100011011011111100000000000000000000000000000000000000000000000000000000000000000000000000000000001111111011000110100011000001100000110000000110001000110011000110111111100000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000000000000000000000001100000011000000110000001100000111011011011100000000000000000000000000000000000000000000000000000000000000000000000000000000100000011000001100011111001100110011001100110011001100110000000000000000000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000000000000000000000001110000110110011000110110001101111111011000110110001100110110000111000000000000000000000000000000000000000000000000000000000001111111000111000011011001100011011000110110001100110110000111000111111100000000 
+	Parameter INIT_35 bound to: 256'b0000000000000000000000000000000000000000000000000001111000110011011000110110001101100110001111000000110000000110011111000000000000000000000000000000000000000000000000000000000001110111001101100011011000110110011000110110001101100011001101100001110000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000000000000000000000001100000110001111100110011101101111011110110011111000110000011000000000000000000000000000000000000000000000000000000000000000000000000000000111111011011011110110110111111000000000000000000000000000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011011000110110001101100011011000110110001101100011001111100000000000000000000000000000000000000000000000000000000000111000000011000000011000000110001111100000011000000110000011000011100000000000 
+	Parameter INIT_38 bound to: 256'b0000000000000000000000000000000000000000000000000111111000000000000110000001100001111110000110000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000011111110000000001111111000000000111111100000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000000000000000000000111111000000000001100000001100000001100000001100000110000011000001100000000000000000000000000000000000000000000000000000000000001111110000000000000110000011000001100000110000000110000000110000000110000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000000000000011000001111000011010000110000001100000011000000110000001100000011000000110000001100000000000000000000000000000000000000110000001100000011000000110000001100000011000000110000101100001111000001100000000000000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000000000000000000000000000111011011011100000000000111011011011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000001100000000000011111100000000000011000000110000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000001100000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111000110011001100110001111000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000000000000000110000001110000011110000110110001100000011000000110000001100011111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000011000001100000110110000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011011000110110001101100011011000011011 
+	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100111111001111110011111100111111001111110000000000000000000000000 
+	Parameter SRVAL bound to: 12'b000000000000 
+	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
+INFO: [Synth 8-113] binding component instance 'bram2' to cell 'RAMB16_S9' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/char8x12_lookup_table.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'char8x12_lookup_table' (17#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/char8x12_lookup_table.vhd:19]
+INFO: [Synth 8-3491] module 'scancode2ascii' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/scancode2ascii.vhd:11' bound to instance 'U1' of component 'scancode2ascii' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:591]
+INFO: [Synth 8-638] synthesizing module 'scancode2ascii' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/scancode2ascii.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'scancode2ascii' (18#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/scancode2ascii.vhd:18]
+WARNING: [Synth 8-6014] Unused sequential element reg_pixels_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:373]
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:434]
+WARNING: [Synth 8-6014] Unused sequential element scancode_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:435]
+WARNING: [Synth 8-6014] Unused sequential element pixelnum_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:504]
+WARNING: [Synth 8-3848] Net color_pixels in module/entity manager_v1_0_M00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'manager_v1_0_M00_AXI' (19#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'manager_v1_0' (20#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'design_1_manager_0_0' (21#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_manager_0_0/synth/design_1_manager_0_0.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'design_1_manager_0_axi_periph_1' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:417]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1G9GO2Z' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1G9GO2Z' (22#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_N1FGUI' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_N1FGUI' (23#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:172]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_J965K9' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:283]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_J965K9' (24#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:283]
+INFO: [Synth 8-3491] module 'design_1_xbar_1' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/synth/design_1_xbar_1.v:59' bound to instance 'xbar' of component 'design_1_xbar_1' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:773]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/synth/design_1_xbar_1.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010001001010000100000000000000000000000000000000000000000000000001000100101000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64'b0000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
+	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
+	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
+	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
+	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_AXILITE_SIZE bound to: 3'b010 
+	Parameter P_INCR bound to: 2'b01 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 2'b11 
+	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter P_M_AXI_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_LEN bound to: 8 - type: integer 
+	Parameter P_LOCK bound to: 1 - type: integer 
+	Parameter P_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010001001010000100000000000000000000000000000000000000000000000001000100101000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010001001010000111111111111111110000000000000000000000000000000001000100101000001111111111111111 
+	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 2'b11 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE bound to: 3 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 2 - type: integer 
+	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
+	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
+	Parameter P_AMESG_WIDTH bound to: 64 - type: integer 
+	Parameter P_BMESG_WIDTH bound to: 3 - type: integer 
+	Parameter P_RMESG_WIDTH bound to: 36 - type: integer 
+	Parameter P_WMESG_WIDTH bound to: 39 - type: integer 
+	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+	Parameter P_M_SECURE_MASK bound to: 2'b00 
+	Parameter P_M_AXILITE_MASK bound to: 2'b00 
+	Parameter P_FIXED bound to: 2'b00 
+	Parameter P_BYPASS bound to: 0 - type: integer 
+	Parameter P_LIGHTWT bound to: 7 - type: integer 
+	Parameter P_FULLY_REG bound to: 1 - type: integer 
+	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
+	Parameter P_DECERR bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_TARGETS bound to: 2 - type: integer 
+	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
+	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ENC bound to: 1 - type: integer 
+	Parameter C_TARGET_HOT bound to: 1 - type: integer 
+	Parameter C_REGION_ENC bound to: 1 - type: integer 
+	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000010001001010000100000000000000000000000000000000000000000000000001000100101000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010001001010000111111111111111110000000000000000000000000000000001000100101000001111111111111111 
+	Parameter C_TARGET_QUAL bound to: 3'b011 
+	Parameter C_RESOLUTION bound to: 2 - type: integer 
+	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010001001010000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+	Parameter C_FAMILY bound to: rtl - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (25#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (26#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010001001010000100000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (26#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' (27#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_RESP bound to: 3 - type: integer 
+	Parameter P_WRITE_IDLE bound to: 2'b00 
+	Parameter P_WRITE_DATA bound to: 2'b01 
+	Parameter P_WRITE_RESP bound to: 2'b10 
+	Parameter P_READ_IDLE bound to: 1'b0 
+	Parameter P_READ_DATA bound to: 1'b1 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' (28#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_S bound to: 1 - type: integer 
+	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
+	Parameter C_AMESG_WIDTH bound to: 64 - type: integer 
+	Parameter C_GRANT_ENC bound to: 1 - type: integer 
+	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter P_PRIO_MASK bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' (29#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter' (30#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' (30#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (31#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 1 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (31#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (31#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' (32#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (32#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' (33#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' (34#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (35#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/synth/design_1_xbar_1.v:59]
+INFO: [Synth 8-256] done synthesizing module 'design_1_manager_0_axi_periph_1' (36#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:417]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_100M_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/synth/design_1_rst_clk_wiz_0_100M_0.vhd:59' bound to instance 'rst_clk_wiz_0_100M' of component 'design_1_rst_clk_wiz_0_100M_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:1218]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/synth/design_1_rst_clk_wiz_0_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b1 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/synth/design_1_rst_clk_wiz_0_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b1 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b1 
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (37#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (38#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (39#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (40#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (41#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (42#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (43#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/synth/design_1_rst_clk_wiz_0_100M_0.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (44#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:858]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (45#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:28]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_aclk
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_resetn
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[1]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[0]
+WARNING: [Synth 8-3331] design cdc_sync has unconnected port scndry_resetn
+WARNING: [Synth 8-3331] design generic_baseblocks_v2_1_0_mux_enc__parameterized0 has unconnected port S[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_WLAST
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_ARLEN[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_addr_decoder has unconnected port ADDR[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_addr_decoder has unconnected port ADDR[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port S_AXI_ARID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port M_AXI_BID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port M_AXI_RID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_crossbar_sasd has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlen[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awsize[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awsize[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awsize[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awburst[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awburst[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awlock[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awcache[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awcache[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awcache[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awcache[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awqos[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awqos[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awqos[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awqos[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_awuser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_wid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_wlast[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_wuser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlen[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arsize[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arsize[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arsize[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arburst[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arburst[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arlock[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arcache[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arcache[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arcache[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arcache[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arqos[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arqos[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arqos[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_arqos[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port s_axi_aruser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_bid[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_bid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_buser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rid[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rlast[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rlast[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_J965K9 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_J965K9 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_J965K9 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_J965K9 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_N1FGUI has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_N1FGUI has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_N1FGUI has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_N1FGUI has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1G9GO2Z has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1G9GO2Z has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1G9GO2Z has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1G9GO2Z has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design design_1_manager_0_axi_periph_1 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design design_1_manager_0_axi_periph_1 has unconnected port M00_ARESETN
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1000.469 ; gain = 362.117
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1000.469 ; gain = 362.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1000.469 ; gain = 362.117
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
+Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
+Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
+Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/Cora-Z7-10-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/Cora-Z7-10-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1034.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  FDR => FDRE: 12 instances
+  RAMB16_S9 => RAMB18E1: 2 instances
+  SRL16 => SRL16E: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1034.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1034.227 ; gain = 395.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1034.227 ; gain = 395.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0/inst. (constraint file  C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc, line 31).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_0_100M/U0. (constraint file  C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc, line 39).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/manager_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/S_AXI_VGA_BRAM_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/keyboard_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/manager_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/manager_0_axi_periph. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1034.227 ; gain = 395.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1034.227 ; gain = 395.875
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     31 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 61    
++---Multipliers : 
+	                 4x31  Multipliers := 1     
+	                 6x31  Multipliers := 1     
+	                31x31  Multipliers := 1     
++---RAMs : 
+	             300K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	 113 Input      7 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 6     
+	   7 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 104   
+	   7 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module asymmetric_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             300K Bit         RAMs := 1     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+Module S_AXI_VGA_BRAM_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module ps2_keyboard 
+Detailed RTL Component Info : 
++---XORs : 
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module keyboard_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+Module char8x12_lookup_table 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module scancode2ascii 
+Detailed RTL Component Info : 
++---Muxes : 
+	 113 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module manager_v1_0_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Multipliers : 
+	                 4x31  Multipliers := 1     
+	                 6x31  Multipliers := 1     
+	                31x31  Multipliers := 1     
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 63    
+	   7 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module axi_crossbar_v2_1_20_addr_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module axi_crossbar_v2_1_20_decerr_slave 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_crossbar_v2_1_20_addr_arbiter_sasd 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module axi_crossbar_v2_1_20_splitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module axi_crossbar_v2_1_20_splitter__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module generic_baseblocks_v2_1_0_mux_enc 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_register_slice_v2_1_19_axic_register_slice 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_crossbar_v2_1_20_crossbar_sasd 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module lpf 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module upcnt_n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sequence_psr 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/vga_sync_1/bram_addr_o, operation Mode is: C+A*(B:0x50).
+DSP Report: operator U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/vga_sync_1/bram_addr_o is absorbed into DSP U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/vga_sync_1/bram_addr_o.
+DSP Report: operator U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/vga_sync_1/bram_addr_o0 is absorbed into DSP U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/vga_sync_1/bram_addr_o.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:166]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:166]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:166]
+DSP Report: Generating DSP U0/manager_v1_0_M00_AXI_inst/R2, operation Mode is: (A:0x50)*B2.
+DSP Report: register U0/manager_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R2.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R2.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R2.
+DSP Report: Generating DSP U0/manager_v1_0_M00_AXI_inst/R2, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register U0/manager_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R2.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R2.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R2.
+DSP Report: Generating DSP U0/manager_v1_0_M00_AXI_inst/R4, operation Mode is: (A:0x50)*B2.
+DSP Report: register U0/manager_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R4.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R4.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R4.
+DSP Report: Generating DSP U0/manager_v1_0_M00_AXI_inst/R4, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register U0/manager_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R4.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R4.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R4.
+DSP Report: Generating DSP U0/manager_v1_0_M00_AXI_inst/R3, operation Mode is: A*(B:0xc).
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R3.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R3.
+DSP Report: Generating DSP U0/manager_v1_0_M00_AXI_inst/R3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R3.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R3.
+DSP Report: Generating DSP U0/manager_v1_0_M00_AXI_inst/R3, operation Mode is: A*(B:0xc).
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R3.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R3.
+DSP Report: Generating DSP U0/manager_v1_0_M00_AXI_inst/R3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R3.
+DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R3.
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
+INFO: [Synth 8-4652] Swapped enable and write-enable on 8 RAM instances of RAM U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/BRAM/ram_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'design_1_i/S_AXI_VGA_BRAM_0/U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'design_1_i/S_AXI_VGA_BRAM_0/U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/S_AXI_VGA_BRAM_0/\U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'design_1_i/S_AXI_VGA_BRAM_0/U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'design_1_i/S_AXI_VGA_BRAM_0/U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/S_AXI_VGA_BRAM_0/\U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'design_1_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'design_1_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/keyboard_0/\U0/keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'design_1_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'design_1_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/keyboard_0/\U0/keyboard_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'design_1_i/rst_clk_wiz_0_100M/U0/SEQ/pr_dec_reg[1]' (FD) to 'design_1_i/rst_clk_wiz_0_100M/U0/SEQ/bsr_dec_reg[1]'
+INFO: [Synth 8-3886] merging instance 'design_1_i/rst_clk_wiz_0_100M/U0/SEQ/bsr_dec_reg[1]' (FD) to 'design_1_i/rst_clk_wiz_0_100M/U0/SEQ/core_dec_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_AUX.ACT_HI_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_AUX.ACT_HI_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1034.227 ; gain = 395.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------+--------------------------------------+---------------+----------------+
+|Module Name          | RTL Object                           | Depth x Width | Implemented As | 
++---------------------+--------------------------------------+---------------+----------------+
+|design_1_manager_0_0 | U0/manager_v1_0_M00_AXI_inst/U1/data | 512x7         | LUT            | 
++---------------------+--------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|asymmetric_ram: | ram_reg    | 64 K x 8(NO_CHANGE)    | W |   | 64 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|vga_sync             | C+A*(B:0x50)    | 10     | 7      | 7      | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|design_1_manager_0_0 | (A:0x50)*B2     | 5      | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_manager_0_0 | (PCIN>>17)+A*B2 | 13     | 5      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_manager_0_0 | (A:0x50)*B2     | 7      | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_manager_0_0 | (PCIN>>17)+A*B2 | 13     | 7      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_manager_0_0 | A*(B:0xc)       | 13     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_manager_0_0 | (PCIN>>17)+A*B  | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_manager_0_0 | A*(B:0xc)       | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|design_1_manager_0_0 | (PCIN>>17)+A*B  | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1063.609 ; gain = 425.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1093.453 ; gain = 455.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name     | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|asymmetric_ram: | ram_reg    | 64 K x 8(NO_CHANGE)    | W |   | 64 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 16     | 
++----------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:83]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:84]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1095.133 ; gain = 456.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net \U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/bram_wen  is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |    18|
+|3     |DSP48E1    |     1|
+|4     |DSP48E1_1  |     2|
+|5     |DSP48E1_2  |     2|
+|6     |DSP48E1_3  |     3|
+|7     |LUT1       |    21|
+|8     |LUT2       |    72|
+|9     |LUT3       |    38|
+|10    |LUT4       |   139|
+|11    |LUT5       |    73|
+|12    |LUT6       |   187|
+|13    |MMCME2_ADV |     1|
+|14    |MUXF7      |    14|
+|15    |MUXF8      |     7|
+|16    |RAMB36E1   |     8|
+|17    |RAMB36E1_2 |     8|
+|18    |SRL16      |     1|
+|19    |FDCE       |    23|
+|20    |FDR        |     8|
+|21    |FDRE       |   445|
+|22    |FDSE       |     8|
+|23    |IBUF       |     4|
+|24    |OBUF       |    14|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------+-----------------------------------------------+------+
+|      |Instance                                   |Module                                         |Cells |
++------+-------------------------------------------+-----------------------------------------------+------+
+|1     |top                                        |                                               |  1100|
+|2     |  design_1_i                               |design_1                                       |  1083|
+|3     |    S_AXI_VGA_BRAM_0                       |design_1_S_AXI_VGA_BRAM_0_0                    |   149|
+|4     |      U0                                   |S_AXI_VGA_BRAM_v1_0                            |   149|
+|5     |        S_AXI_VGA_BRAM_v1_0_S00_AXI_inst   |S_AXI_VGA_BRAM_v1_0_S00_AXI                    |   149|
+|6     |          BRAM_VGA                         |VGA_BRAM                                       |    96|
+|7     |            BRAM                           |asymmetric_ram                                 |    25|
+|8     |            vga_sync_1                     |vga_sync                                       |    71|
+|9     |    clk_wiz_0                              |design_1_clk_wiz_0_0                           |     5|
+|10    |      inst                                 |design_1_clk_wiz_0_0_clk_wiz                   |     5|
+|11    |    keyboard_0                             |design_1_keyboard_0_0                          |   292|
+|12    |      U0                                   |keyboard_v1_0                                  |   292|
+|13    |        keyboard_v1_0_S00_AXI_inst         |keyboard_v1_0_S00_AXI                          |   292|
+|14    |          U0                               |ps2_keyboard                                   |   132|
+|15    |            debounce_ps2_clk               |debounce                                       |    26|
+|16    |            debounce_ps2_data              |debounce_1                                     |    25|
+|17    |    manager_0                              |design_1_manager_0_0                           |   306|
+|18    |      U0                                   |manager_v1_0                                   |   306|
+|19    |        manager_v1_0_M00_AXI_inst          |manager_v1_0_M00_AXI                           |   306|
+|20    |          U1                               |scancode2ascii                                 |    51|
+|21    |    manager_0_axi_periph                   |design_1_manager_0_axi_periph_1                |   266|
+|22    |      xbar                                 |design_1_xbar_1                                |   266|
+|23    |        inst                               |axi_crossbar_v2_1_20_axi_crossbar              |   266|
+|24    |          \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_20_crossbar_sasd             |   266|
+|25    |            addr_arbiter_inst              |axi_crossbar_v2_1_20_addr_arbiter_sasd         |   123|
+|26    |            \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_20_decerr_slave              |    11|
+|27    |            reg_slice_r                    |axi_register_slice_v2_1_19_axic_register_slice |   112|
+|28    |            splitter_ar                    |axi_crossbar_v2_1_20_splitter__parameterized0  |     2|
+|29    |            splitter_aw                    |axi_crossbar_v2_1_20_splitter                  |    10|
+|30    |    rst_clk_wiz_0_100M                     |design_1_rst_clk_wiz_0_100M_0                  |    65|
+|31    |      U0                                   |proc_sys_reset                                 |    65|
+|32    |        EXT_LPF                            |lpf                                            |    22|
+|33    |          \ACTIVE_HIGH_AUX.ACT_HI_AUX      |cdc_sync                                       |     5|
+|34    |          \ACTIVE_HIGH_EXT.ACT_HI_EXT      |cdc_sync_0                                     |     6|
+|35    |        SEQ                                |sequence_psr                                   |    38|
+|36    |          SEQ_COUNTER                      |upcnt_n                                        |    13|
++------+-------------------------------------------+-----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 158 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1099.898 ; gain = 427.789
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1115.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  FDR => FDRE: 8 instances
+  SRL16 => SRL16E: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+181 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 1115.953 ; gain = 729.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1115.953 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 26 15:58:04 2022...
