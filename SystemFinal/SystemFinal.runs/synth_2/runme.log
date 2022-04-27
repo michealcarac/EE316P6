@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+    with args -log dgn_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dgn_wrapper.tcl
 
 
 ****** Vivado v2019.1 (64-bit)
@@ -8,77 +8,33 @@
   **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
-source design_1_wrapper.tcl -notrace
+source dgn_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/caraccmv/Desktop/git/EE316P6/IPRepo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-Command: synth_design -top design_1_wrapper -part xc7z010clg400-1
+Command: synth_design -top dgn_wrapper -part xc7z010clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7120 
+INFO: Helper process launched with PID 3168 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 814.750 ; gain = 176.398
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 814.551 ; gain = 176.445
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:28]
-INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:840' bound to instance 'design_1_i' of component 'design_1' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:43]
-INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:858]
-INFO: [Synth 8-3491] module 'design_1_S_AXI_VGA_BRAM_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_S_AXI_VGA_BRAM_0_0/synth/design_1_S_AXI_VGA_BRAM_0_0.vhd:56' bound to instance 'S_AXI_VGA_BRAM_0' of component 'design_1_S_AXI_VGA_BRAM_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:1060]
-INFO: [Synth 8-638] synthesizing module 'design_1_S_AXI_VGA_BRAM_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_S_AXI_VGA_BRAM_0_0/synth/design_1_S_AXI_VGA_BRAM_0_0.vhd:88]
-	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S00_AXI_ADDR_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'S_AXI_VGA_BRAM_v1_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0.vhd:5' bound to instance 'U0' of component 'S_AXI_VGA_BRAM_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_S_AXI_VGA_BRAM_0_0/synth/design_1_S_AXI_VGA_BRAM_0_0.vhd:158]
-INFO: [Synth 8-638] synthesizing module 'S_AXI_VGA_BRAM_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0.vhd:54]
-	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S00_AXI_ADDR_WIDTH bound to: 16 - type: integer 
-	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'S_AXI_VGA_BRAM_v1_0_S00_AXI' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:5' bound to instance 'S_AXI_VGA_BRAM_v1_0_S00_AXI_inst' of component 'S_AXI_VGA_BRAM_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'S_AXI_VGA_BRAM_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:92]
-	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'VGA_BRAM' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/VGA_BRAM.vhd:28' bound to instance 'BRAM_VGA' of component 'VGA_BRAM' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:375]
-INFO: [Synth 8-638] synthesizing module 'VGA_BRAM' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/VGA_BRAM.vhd:47]
-	Parameter WIDTHA bound to: 8 - type: integer 
-	Parameter SIZEA bound to: 38400 - type: integer 
-	Parameter ADDRWIDTHA bound to: 16 - type: integer 
-	Parameter WIDTHB bound to: 8 - type: integer 
-	Parameter SIZEB bound to: 38400 - type: integer 
-	Parameter ADDRWIDTHB bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'asymmetric_ram' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/asymmetric_ram.vhd:15' bound to instance 'BRAM' of component 'asymmetric_ram' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/VGA_BRAM.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'asymmetric_ram' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/asymmetric_ram.vhd:39]
-	Parameter WIDTHA bound to: 8 - type: integer 
-	Parameter SIZEA bound to: 38400 - type: integer 
-	Parameter ADDRWIDTHA bound to: 16 - type: integer 
-	Parameter WIDTHB bound to: 8 - type: integer 
-	Parameter SIZEB bound to: 38400 - type: integer 
-	Parameter ADDRWIDTHB bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'asymmetric_ram' (1#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/asymmetric_ram.vhd:39]
-INFO: [Synth 8-3491] module 'vga_sync' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:30' bound to instance 'vga_sync_1' of component 'vga_sync' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/VGA_BRAM.vhd:119]
-INFO: [Synth 8-638] synthesizing module 'vga_sync' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:47]
-WARNING: [Synth 8-614] signal 'bram_data_i' is read in the process but is not in the sensitivity list [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:157]
-WARNING: [Synth 8-614] signal 'pixel_x' is read in the process but is not in the sensitivity list [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:157]
-INFO: [Synth 8-256] done synthesizing module 'vga_sync' (2#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'VGA_BRAM' (3#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/VGA_BRAM.vhd:47]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:245]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:246]
-WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:291]
-WARNING: [Synth 8-3848] Net axi_rdata in module/entity S_AXI_VGA_BRAM_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:121]
-INFO: [Synth 8-256] done synthesizing module 'S_AXI_VGA_BRAM_v1_0_S00_AXI' (4#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0_S00_AXI.vhd:92]
-INFO: [Synth 8-256] done synthesizing module 'S_AXI_VGA_BRAM_v1_0' (5#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/e06e/hdl/S_AXI_VGA_BRAM_v1_0.vhd:54]
-INFO: [Synth 8-256] done synthesizing module 'design_1_S_AXI_VGA_BRAM_0_0' (6#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_S_AXI_VGA_BRAM_0_0/synth/design_1_S_AXI_VGA_BRAM_0_0.vhd:88]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:1090]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-638] synthesizing module 'dgn_wrapper' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/hdl/dgn_wrapper.vhd:28]
+INFO: [Synth 8-3491] module 'dgn' declared at 'C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:840' bound to instance 'dgn_i' of component 'dgn' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/hdl/dgn_wrapper.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'dgn' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:858]
+INFO: [Synth 8-3491] module 'dgn_clk_wiz_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_0/dgn_clk_wiz_0.v:72' bound to instance 'clk_wiz' of component 'dgn_clk_wiz_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:1062]
+INFO: [Synth 8-6157] synthesizing module 'dgn_clk_wiz_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_0/dgn_clk_wiz_0.v:72]
+INFO: [Synth 8-6157] synthesizing module 'dgn_clk_wiz_0_clk_wiz' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_0/dgn_clk_wiz_0_clk_wiz.v:70]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUF' (7#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: float 
@@ -94,7 +50,7 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/s
 	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
-	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 8 - type: integer 
 	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
 	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
 	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
@@ -128,79 +84,83 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/s
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (8#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (9#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (10#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (11#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
-INFO: [Synth 8-3491] module 'design_1_keyboard_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_keyboard_0_0/synth/design_1_keyboard_0_0.vhd:56' bound to instance 'keyboard_0' of component 'design_1_keyboard_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:1097]
-INFO: [Synth 8-638] synthesizing module 'design_1_keyboard_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_keyboard_0_0/synth/design_1_keyboard_0_0.vhd:86]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'dgn_clk_wiz_0_clk_wiz' (4#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_0/dgn_clk_wiz_0_clk_wiz.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'dgn_clk_wiz_0' (5#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_0/dgn_clk_wiz_0.v:72]
+INFO: [Synth 8-3491] module 'dgn_keyboard_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_keyboard_0_0/synth/dgn_keyboard_0_0.vhd:56' bound to instance 'keyboard_0' of component 'dgn_keyboard_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:1071]
+INFO: [Synth 8-638] synthesizing module 'dgn_keyboard_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_keyboard_0_0/synth/dgn_keyboard_0_0.vhd:86]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'keyboard_v1_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0.vhd:5' bound to instance 'U0' of component 'keyboard_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_keyboard_0_0/synth/design_1_keyboard_0_0.vhd:158]
-INFO: [Synth 8-638] synthesizing module 'keyboard_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0.vhd:52]
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'keyboard_v1_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0.vhd:5' bound to instance 'U0' of component 'keyboard_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_keyboard_0_0/synth/dgn_keyboard_0_0.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'keyboard_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0.vhd:52]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'keyboard_v1_0_S00_AXI' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:5' bound to instance 'keyboard_v1_0_S00_AXI_inst' of component 'keyboard_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0.vhd:92]
-INFO: [Synth 8-638] synthesizing module 'keyboard_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:89]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'keyboard_v1_0_S00_AXI' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:5' bound to instance 'keyboard_v1_0_S00_AXI_inst' of component 'keyboard_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'keyboard_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:89]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-226] default block is never used [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:242]
-INFO: [Synth 8-226] default block is never used [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:372]
-WARNING: [Synth 8-614] signal 'ps2_code' is read in the process but is not in the sensitivity list [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:367]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:373]
+WARNING: [Synth 8-614] signal 'ps2_code' is read in the process but is not in the sensitivity list [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:368]
 	Parameter clk_freq bound to: 50000000 - type: integer 
 	Parameter debounce_counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'ps2_keyboard' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/ps2_keyboard.vhd:26' bound to instance 'U0' of component 'ps2_keyboard' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:406]
-INFO: [Synth 8-638] synthesizing module 'ps2_keyboard' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/ps2_keyboard.vhd:38]
+INFO: [Synth 8-3491] module 'ps2_keyboard' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/src/ps2_keyboard.vhd:26' bound to instance 'U0' of component 'ps2_keyboard' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:407]
+INFO: [Synth 8-638] synthesizing module 'ps2_keyboard' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/src/ps2_keyboard.vhd:38]
 	Parameter clk_freq bound to: 50000000 - type: integer 
 	Parameter debounce_counter_size bound to: 8 - type: integer 
 	Parameter counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/debounce.vhd:27' bound to instance 'debounce_ps2_clk' of component 'debounce' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/ps2_keyboard.vhd:68]
-INFO: [Synth 8-638] synthesizing module 'debounce' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/debounce.vhd:36]
+INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/src/debounce.vhd:27' bound to instance 'debounce_ps2_clk' of component 'debounce' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/src/ps2_keyboard.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'debounce' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/src/debounce.vhd:36]
 	Parameter counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'debounce' (12#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/debounce.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (6#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/src/debounce.vhd:36]
 	Parameter counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/debounce.vhd:27' bound to instance 'debounce_ps2_data' of component 'debounce' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/ps2_keyboard.vhd:71]
-INFO: [Synth 8-256] done synthesizing module 'ps2_keyboard' (13#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/src/ps2_keyboard.vhd:38]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:235]
-WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:240]
-INFO: [Synth 8-256] done synthesizing module 'keyboard_v1_0_S00_AXI' (14#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0_S00_AXI.vhd:89]
-INFO: [Synth 8-256] done synthesizing module 'keyboard_v1_0' (15#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/231f/hdl/keyboard_v1_0.vhd:52]
-INFO: [Synth 8-256] done synthesizing module 'design_1_keyboard_0_0' (16#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_keyboard_0_0/synth/design_1_keyboard_0_0.vhd:86]
-INFO: [Synth 8-3491] module 'design_1_manager_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_manager_0_0/synth/design_1_manager_0_0.vhd:56' bound to instance 'manager_0' of component 'design_1_manager_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:1125]
-INFO: [Synth 8-638] synthesizing module 'design_1_manager_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_manager_0_0/synth/design_1_manager_0_0.vhd:83]
+INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/src/debounce.vhd:27' bound to instance 'debounce_ps2_data' of component 'debounce' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/src/ps2_keyboard.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'ps2_keyboard' (7#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/src/ps2_keyboard.vhd:38]
+WARNING: [Synth 8-3848] Net axi_awready in module/entity keyboard_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:93]
+WARNING: [Synth 8-3848] Net axi_wready in module/entity keyboard_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:94]
+WARNING: [Synth 8-3848] Net axi_bresp in module/entity keyboard_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:95]
+WARNING: [Synth 8-3848] Net axi_bvalid in module/entity keyboard_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:96]
+WARNING: [Synth 8-3848] Net slv_reg1 in module/entity keyboard_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:115]
+WARNING: [Synth 8-3848] Net slv_reg2 in module/entity keyboard_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:116]
+WARNING: [Synth 8-3848] Net slv_reg3 in module/entity keyboard_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_v1_0_S00_AXI' (8#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_v1_0' (9#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ce79/hdl/keyboard_v1_0.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'dgn_keyboard_0_0' (10#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_keyboard_0_0/synth/dgn_keyboard_0_0.vhd:86]
+INFO: [Synth 8-3491] module 'dgn_manager_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_manager_0_0/synth/dgn_manager_0_0.vhd:56' bound to instance 'manager_0' of component 'dgn_manager_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:1099]
+INFO: [Synth 8-638] synthesizing module 'dgn_manager_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_manager_0_0/synth/dgn_manager_0_0.vhd:83]
 	Parameter C_M00_AXI_START_DATA_VALUE bound to: 32'b10101010000000000000000000000000 
 	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXI_TRANSACTIONS_NUM bound to: 4 - type: integer 
-	Parameter C_M00_PS2_SLAVE_BASE_ADDR bound to: 32'b01000100101000010000000000000000 
-	Parameter C_M00_VIDEOMEM_BASE_ADDR bound to: 32'b01000100101000000000000000000000 
-INFO: [Synth 8-3491] module 'manager_v1_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:5' bound to instance 'U0' of component 'manager_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_manager_0_0/synth/design_1_manager_0_0.vhd:155]
-INFO: [Synth 8-638] synthesizing module 'manager_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:56]
-	Parameter C_M00_PS2_SLAVE_BASE_ADDR bound to: 1151401984 - type: integer 
-	Parameter C_M00_VIDEOMEM_BASE_ADDR bound to: 1151336448 - type: integer 
+	Parameter C_M00_PS2_SLAVE_BASE_ADDR bound to: 32'b10000000000000000000000000000000 
+	Parameter C_M00_VIDEOMEM_BASE_ADDR bound to: 32'b01000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'manager_v1_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0.vhd:5' bound to instance 'U0' of component 'manager_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_manager_0_0/synth/dgn_manager_0_0.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'manager_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0.vhd:56]
+	Parameter C_M00_PS2_SLAVE_BASE_ADDR bound to: -2147483648 - type: integer 
+	Parameter C_M00_VIDEOMEM_BASE_ADDR bound to: 1073741824 - type: integer 
 	Parameter C_M00_AXI_START_DATA_VALUE bound to: -1442840576 - type: integer 
 	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXI_TRANSACTIONS_NUM bound to: 4 - type: integer 
-	Parameter C_M_PS2_SLAVE_BASE_ADDR bound to: 1151401984 - type: integer 
-	Parameter C_M_VIDEOMEM_BASE_ADDR bound to: 1151336448 - type: integer 
+	Parameter C_M_PS2_SLAVE_BASE_ADDR bound to: -2147483648 - type: integer 
+	Parameter C_M_VIDEOMEM_BASE_ADDR bound to: 1073741824 - type: integer 
 	Parameter C_M_START_DATA_VALUE bound to: -1442840576 - type: integer 
 	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_TRANSACTIONS_NUM bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'manager_v1_0_M00_AXI' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:5' bound to instance 'manager_v1_0_M00_AXI_inst' of component 'manager_v1_0_M00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'manager_v1_0_M00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:86]
-	Parameter C_M_PS2_SLAVE_BASE_ADDR bound to: 1151401984 - type: integer 
-	Parameter C_M_VIDEOMEM_BASE_ADDR bound to: 1151336448 - type: integer 
+INFO: [Synth 8-3491] module 'manager_v1_0_M00_AXI' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:5' bound to instance 'manager_v1_0_M00_AXI_inst' of component 'manager_v1_0_M00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'manager_v1_0_M00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:86]
+	Parameter C_M_PS2_SLAVE_BASE_ADDR bound to: -2147483648 - type: integer 
+	Parameter C_M_VIDEOMEM_BASE_ADDR bound to: 1073741824 - type: integer 
 	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
-WARNING: [Synth 8-3819] Generic 'c_m_start_data_value' not present in instantiated entity will be ignored [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:101]
-WARNING: [Synth 8-3819] Generic 'c_m_transactions_num' not present in instantiated entity will be ignored [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:101]
-INFO: [Synth 8-3491] module 'char8x12_lookup_table' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/char8x12_lookup_table.vhd:11' bound to instance 'U0' of component 'char8x12_lookup_table' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:582]
-INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/char8x12_lookup_table.vhd:19]
+WARNING: [Synth 8-3819] Generic 'c_m_start_data_value' not present in instantiated entity will be ignored [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0.vhd:101]
+WARNING: [Synth 8-3819] Generic 'c_m_transactions_num' not present in instantiated entity will be ignored [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0.vhd:101]
+INFO: [Synth 8-3491] module 'char8x12_lookup_table' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/src/char8x12_lookup_table.vhd:11' bound to instance 'U0' of component 'char8x12_lookup_table' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:599]
+INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/src/char8x12_lookup_table.vhd:19]
 	Parameter INIT bound to: 12'b000000000000 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -276,7 +236,7 @@ INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/Users/caracc
 	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000001111111001101100011011000011100000111000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110110110111000000000 
 	Parameter SRVAL bound to: 12'b000000000000 
 	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
-INFO: [Synth 8-113] binding component instance 'bram1' to cell 'RAMB16_S9' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/char8x12_lookup_table.vhd:26]
+INFO: [Synth 8-113] binding component instance 'bram1' to cell 'RAMB16_S9' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/src/char8x12_lookup_table.vhd:26]
 	Parameter INIT bound to: 12'b000000000000 
 	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -352,29 +312,154 @@ INFO: [Synth 8-113] binding component instance 'bram1' to cell 'RAMB16_S9' [c:/U
 	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100111111001111110011111100111111001111110000000000000000000000000 
 	Parameter SRVAL bound to: 12'b000000000000 
 	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
-INFO: [Synth 8-113] binding component instance 'bram2' to cell 'RAMB16_S9' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/char8x12_lookup_table.vhd:96]
-INFO: [Synth 8-256] done synthesizing module 'char8x12_lookup_table' (17#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/char8x12_lookup_table.vhd:19]
-INFO: [Synth 8-3491] module 'scancode2ascii' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/scancode2ascii.vhd:11' bound to instance 'U1' of component 'scancode2ascii' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:591]
-INFO: [Synth 8-638] synthesizing module 'scancode2ascii' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/scancode2ascii.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'scancode2ascii' (18#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/src/scancode2ascii.vhd:18]
-WARNING: [Synth 8-6014] Unused sequential element reg_pixels_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:373]
-WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:434]
-WARNING: [Synth 8-6014] Unused sequential element scancode_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:435]
-WARNING: [Synth 8-6014] Unused sequential element pixelnum_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:504]
-WARNING: [Synth 8-3848] Net color_pixels in module/entity manager_v1_0_M00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:127]
-INFO: [Synth 8-256] done synthesizing module 'manager_v1_0_M00_AXI' (19#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:86]
-INFO: [Synth 8-256] done synthesizing module 'manager_v1_0' (20#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0.vhd:56]
-INFO: [Synth 8-256] done synthesizing module 'design_1_manager_0_0' (21#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_manager_0_0/synth/design_1_manager_0_0.vhd:83]
-INFO: [Synth 8-638] synthesizing module 'design_1_manager_0_axi_periph_1' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:417]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1G9GO2Z' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:61]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1G9GO2Z' (22#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:61]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_N1FGUI' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:172]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_N1FGUI' (23#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:172]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_J965K9' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:283]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_J965K9' (24#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:283]
-INFO: [Synth 8-3491] module 'design_1_xbar_1' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/synth/design_1_xbar_1.v:59' bound to instance 'xbar' of component 'design_1_xbar_1' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:773]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/synth/design_1_xbar_1.v:59]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-113] binding component instance 'bram2' to cell 'RAMB16_S9' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/src/char8x12_lookup_table.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'char8x12_lookup_table' (11#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/src/char8x12_lookup_table.vhd:19]
+INFO: [Synth 8-3491] module 'scancode2ascii' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/src/scancode2ascii.vhd:11' bound to instance 'U1' of component 'scancode2ascii' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:608]
+INFO: [Synth 8-638] synthesizing module 'scancode2ascii' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/src/scancode2ascii.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'scancode2ascii' (12#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/src/scancode2ascii.vhd:18]
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:451]
+WARNING: [Synth 8-6014] Unused sequential element scancode_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:452]
+WARNING: [Synth 8-6014] Unused sequential element pixelnum_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:521]
+WARNING: [Synth 8-3848] Net color_pixels in module/entity manager_v1_0_M00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'manager_v1_0_M00_AXI' (13#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'manager_v1_0' (14#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'dgn_manager_0_0' (15#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_manager_0_0/synth/dgn_manager_0_0.vhd:83]
+INFO: [Synth 8-3491] module 'dgn_rst_clk_wiz_100M_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_0/synth/dgn_rst_clk_wiz_100M_0.vhd:59' bound to instance 'rst_clk_wiz_100M' of component 'dgn_rst_clk_wiz_100M_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:1124]
+INFO: [Synth 8-638] synthesizing module 'dgn_rst_clk_wiz_100M_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_0/synth/dgn_rst_clk_wiz_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_0/synth/dgn_rst_clk_wiz_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (16#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (17#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (18#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (19#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (20#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (21#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'dgn_rst_clk_wiz_100M_0' (22#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_0/synth/dgn_rst_clk_wiz_100M_0.vhd:74]
+INFO: [Synth 8-3491] module 'dgn_vga_bram_0_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_vga_bram_0_0/synth/dgn_vga_bram_0_0.vhd:56' bound to instance 'vga_bram_0' of component 'dgn_vga_bram_0_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:1137]
+INFO: [Synth 8-638] synthesizing module 'dgn_vga_bram_0_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_vga_bram_0_0/synth/dgn_vga_bram_0_0.vhd:89]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vga_bram_v1_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0.vhd:5' bound to instance 'U0' of component 'vga_bram_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_vga_bram_0_0/synth/dgn_vga_bram_0_0.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'vga_bram_v1_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0.vhd:55]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vga_bram_v1_0_S00_AXI' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0_S00_AXI.vhd:5' bound to instance 'vga_bram_v1_0_S00_AXI_inst' of component 'vga_bram_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'vga_bram_v1_0_S00_AXI' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0_S00_AXI.vhd:92]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'VGA_BRAM' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/VGA_BRAM.vhd:28' bound to instance 'Inst_VGA_BRAM' of component 'VGA_BRAM' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0_S00_AXI.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'VGA_BRAM' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/VGA_BRAM.vhd:47]
+	Parameter WIDTHA bound to: 8 - type: integer 
+	Parameter SIZEA bound to: 38400 - type: integer 
+	Parameter ADDRWIDTHA bound to: 16 - type: integer 
+	Parameter WIDTHB bound to: 8 - type: integer 
+	Parameter SIZEB bound to: 38400 - type: integer 
+	Parameter ADDRWIDTHB bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'asymmetric_ram' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/asymmetric_ram.vhd:15' bound to instance 'BRAM' of component 'asymmetric_ram' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/VGA_BRAM.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'asymmetric_ram' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/asymmetric_ram.vhd:39]
+	Parameter WIDTHA bound to: 8 - type: integer 
+	Parameter SIZEA bound to: 38400 - type: integer 
+	Parameter ADDRWIDTHA bound to: 16 - type: integer 
+	Parameter WIDTHB bound to: 8 - type: integer 
+	Parameter SIZEB bound to: 38400 - type: integer 
+	Parameter ADDRWIDTHB bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'asymmetric_ram' (23#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/asymmetric_ram.vhd:39]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/vga_sync.vhd:30' bound to instance 'vga_sync_1' of component 'vga_sync' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/VGA_BRAM.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/vga_sync.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (24#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/vga_sync.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'VGA_BRAM' (25#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/VGA_BRAM.vhd:47]
+WARNING: [Synth 8-3848] Net axi_arready in module/entity vga_bram_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0_S00_AXI.vhd:124]
+WARNING: [Synth 8-3848] Net axi_rdata in module/entity vga_bram_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0_S00_AXI.vhd:125]
+WARNING: [Synth 8-3848] Net axi_rresp in module/entity vga_bram_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0_S00_AXI.vhd:126]
+WARNING: [Synth 8-3848] Net axi_rvalid in module/entity vga_bram_v1_0_S00_AXI does not have driver. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0_S00_AXI.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'vga_bram_v1_0_S00_AXI' (26#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0_S00_AXI.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'vga_bram_v1_0' (27#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/hdl/vga_bram_v1_0.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'dgn_vga_bram_0_0' (28#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_vga_bram_0_0/synth/dgn_vga_bram_0_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'dgn_videomemlab_0_axi_periph_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:417]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_UNNG4F' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_UNNG4F' (29#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1DX6FOA' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1DX6FOA' (30#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:172]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1JC0679' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:283]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1JC0679' (31#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:283]
+INFO: [Synth 8-3491] module 'dgn_xbar_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_xbar_0/synth/dgn_xbar_0.v:59' bound to instance 'xbar' of component 'dgn_xbar_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:773]
+INFO: [Synth 8-6157] synthesizing module 'dgn_xbar_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_xbar_0/synth/dgn_xbar_0.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
@@ -383,7 +468,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010001001010000100000000000000000000000000000000000000000000000001000100101000000000000000000000 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 
 	Parameter C_M_AXI_ADDR_WIDTH bound to: 64'b0000000000000000000000000001000000000000000000000000000000010000 
 	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
 	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
@@ -423,7 +508,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' [c:
 	Parameter P_LEN bound to: 8 - type: integer 
 	Parameter P_LOCK bound to: 1 - type: integer 
 	Parameter P_FAMILY bound to: zynq - type: string 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
 	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
@@ -432,8 +517,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' [c
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
-	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010001001010000100000000000000000000000000000000000000000000000001000100101000000000000000000000 
-	Parameter C_M_AXI_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010001001010000111111111111111110000000000000000000000000000000001000100101000001111111111111111 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010000000000000011111111111111110000000000000000000000000000000010000000000000001111111111111111 
 	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
@@ -476,7 +561,7 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' [c
 	Parameter P_FULLY_REG bound to: 1 - type: integer 
 	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
 	Parameter P_DECERR bound to: 2'b11 
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_TARGETS bound to: 2 - type: integer 
 	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
@@ -485,32 +570,32 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' [c:
 	Parameter C_TARGET_ENC bound to: 1 - type: integer 
 	Parameter C_TARGET_HOT bound to: 1 - type: integer 
 	Parameter C_REGION_ENC bound to: 1 - type: integer 
-	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000010001001010000100000000000000000000000000000000000000000000000001000100101000000000000000000000 
-	Parameter C_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010001001010000111111111111111110000000000000000000000000000000001000100101000001111111111111111 
+	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010000000000000011111111111111110000000000000000000000000000000010000000000000001111111111111111 
 	Parameter C_TARGET_QUAL bound to: 3'b011 
 	Parameter C_RESOLUTION bound to: 2 - type: integer 
 	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b010001001010000000000000000000 
+	Parameter C_VALUE bound to: 30'b100000000000000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
 	Parameter C_FAMILY bound to: rtl - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (25#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (26#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (32#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (33#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
 	Parameter C_FAMILY bound to: rtl - type: string 
-	Parameter C_VALUE bound to: 30'b010001001010000100000000000000 
+	Parameter C_VALUE bound to: 30'b010000000000000000000000000000 
 	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
 	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
 	Parameter C_NUM_LUT bound to: 5 - type: integer 
 	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (26#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' (27#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (33#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_decoder' (34#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
@@ -525,8 +610,8 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' [c:
 	Parameter P_AXI4 bound to: 0 - type: integer 
 	Parameter P_AXI3 bound to: 1 - type: integer 
 	Parameter P_AXILITE bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' (28#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_decerr_slave' (35#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_NUM_S bound to: 1 - type: integer 
 	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
@@ -534,141 +619,52 @@ INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd
 	Parameter C_GRANT_ENC bound to: 1 - type: integer 
 	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
 	Parameter P_PRIO_MASK bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' (29#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_addr_arbiter_sasd' (36#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter' (30#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter' (37#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
 	Parameter C_NUM_M bound to: 2 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' (30#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_splitter__parameterized0' (37#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (31#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (38#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 1 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (31#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (38#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (31#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (38#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' (32#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
-INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_19_axic_register_slice' (39#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:488]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_RATIO bound to: 3 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (32#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
-WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' (33#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
-INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' (34#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (35#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/synth/design_1_xbar_1.v:59]
-INFO: [Synth 8-256] done synthesizing module 'design_1_manager_0_axi_periph_1' (36#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:417]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_0_100M_0' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/synth/design_1_rst_clk_wiz_0_100M_0.vhd:59' bound to instance 'rst_clk_wiz_0_100M' of component 'design_1_rst_clk_wiz_0_100M_0' [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:1218]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/synth/design_1_rst_clk_wiz_0_100M_0.vhd:74]
-	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
-	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
-	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
-	Parameter C_AUX_RESET_HIGH bound to: 1'b1 
-	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
-	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
-	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
-	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/synth/design_1_rst_clk_wiz_0_100M_0.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-	Parameter C_FAMILY bound to: zynq - type: string 
-	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
-	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
-	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
-	Parameter C_AUX_RESET_HIGH bound to: 1'b1 
-	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
-	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
-	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
-	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-	Parameter INIT bound to: 1'b1 
-	Parameter IS_C_INVERTED bound to: 1'b0 
-	Parameter IS_D_INVERTED bound to: 1'b0 
-	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
-	Parameter INIT bound to: 1'b1 
-	Parameter IS_C_INVERTED bound to: 1'b0 
-	Parameter IS_D_INVERTED bound to: 1'b0 
-	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
-	Parameter INIT bound to: 1'b0 
-	Parameter IS_C_INVERTED bound to: 1'b0 
-	Parameter IS_D_INVERTED bound to: 1'b0 
-	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
-	Parameter INIT bound to: 1'b1 
-	Parameter IS_C_INVERTED bound to: 1'b0 
-	Parameter IS_D_INVERTED bound to: 1'b0 
-	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
-	Parameter INIT bound to: 1'b0 
-	Parameter IS_C_INVERTED bound to: 1'b0 
-	Parameter IS_D_INVERTED bound to: 1'b0 
-	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
-	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
-	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
-	Parameter C_AUX_RESET_HIGH bound to: 1'b1 
-INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
-INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684]
-	Parameter INIT bound to: 16'b0000000000000000 
-INFO: [Synth 8-6155] done synthesizing module 'SRL16' (37#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77684]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-	Parameter C_CDC_TYPE bound to: 1 - type: integer 
-	Parameter C_RESET_STATE bound to: 0 - type: integer 
-	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
-	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
-	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
-	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
-	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
-	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
-	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
-	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
-	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
-	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (38#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (39#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-	Parameter C_SIZE bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (40#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (41#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (42#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (43#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/synth/design_1_rst_clk_wiz_0_100M_0.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (44#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/synth/design_1.vhd:858]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (45#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:28]
-WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_aclk
-WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_resetn
-WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[1]
-WARNING: [Synth 8-3331] design cdc_sync has unconnected port prmry_vect_in[0]
-WARNING: [Synth 8-3331] design cdc_sync has unconnected port scndry_resetn
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (39#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_crossbar_sasd' (40#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_20_axi_crossbar' (41#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'dgn_xbar_0' (42#1) [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_xbar_0/synth/dgn_xbar_0.v:59]
+INFO: [Synth 8-256] done synthesizing module 'dgn_videomemlab_0_axi_periph_0' (43#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:417]
+INFO: [Synth 8-256] done synthesizing module 'dgn' (44#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/synth/dgn.vhd:858]
+INFO: [Synth 8-256] done synthesizing module 'dgn_wrapper' (45#1) [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/hdl/dgn_wrapper.vhd:28]
 WARNING: [Synth 8-3331] design generic_baseblocks_v2_1_0_mux_enc__parameterized0 has unconnected port S[0]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_AWID[0]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_decerr_slave has unconnected port S_AXI_WLAST
@@ -750,23 +746,28 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_rlast[0]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[1]
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_20_axi_crossbar has unconnected port m_axi_ruser[0]
-WARNING: [Synth 8-3331] design s00_couplers_imp_J965K9 has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design s00_couplers_imp_J965K9 has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design s00_couplers_imp_J965K9 has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design s00_couplers_imp_J965K9 has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design m01_couplers_imp_N1FGUI has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m01_couplers_imp_N1FGUI has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m01_couplers_imp_N1FGUI has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design m01_couplers_imp_N1FGUI has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design m00_couplers_imp_1G9GO2Z has unconnected port M_ACLK
-WARNING: [Synth 8-3331] design m00_couplers_imp_1G9GO2Z has unconnected port M_ARESETN
-WARNING: [Synth 8-3331] design m00_couplers_imp_1G9GO2Z has unconnected port S_ACLK
-WARNING: [Synth 8-3331] design m00_couplers_imp_1G9GO2Z has unconnected port S_ARESETN
-WARNING: [Synth 8-3331] design design_1_manager_0_axi_periph_1 has unconnected port M00_ACLK
-WARNING: [Synth 8-3331] design design_1_manager_0_axi_periph_1 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JC0679 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JC0679 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JC0679 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JC0679 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1DX6FOA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1DX6FOA has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1DX6FOA has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1DX6FOA has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_UNNG4F has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_UNNG4F has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_UNNG4F has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_UNNG4F has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design vga_sync has unconnected port clk
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1000.469 ; gain = 362.117
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 999.688 ; gain = 361.582
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -779,78 +780,77 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1000.469 ; gain = 362.117
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 999.688 ; gain = 361.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1000.469 ; gain = 362.117
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 999.688 ; gain = 361.582
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
-Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
-Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
-Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_0_100M/U0'
+Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_0/dgn_clk_wiz_0_board.xdc] for cell 'dgn_i/clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_0/dgn_clk_wiz_0_board.xdc] for cell 'dgn_i/clk_wiz/inst'
+Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_0/dgn_clk_wiz_0.xdc] for cell 'dgn_i/clk_wiz/inst'
+Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_0/dgn_clk_wiz_0.xdc] for cell 'dgn_i/clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_0/dgn_clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dgn_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dgn_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_0/dgn_rst_clk_wiz_100M_0_board.xdc] for cell 'dgn_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_0/dgn_rst_clk_wiz_100M_0_board.xdc] for cell 'dgn_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_0/dgn_rst_clk_wiz_100M_0.xdc] for cell 'dgn_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_0/dgn_rst_clk_wiz_100M_0.xdc] for cell 'dgn_i/rst_clk_wiz_100M/U0'
 INFO: [Timing 38-2] Deriving generated clocks
 Parsing XDC File [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/Cora-Z7-10-Master.xdc]
 Finished Parsing XDC File [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/Cora-Z7-10-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/Cora-Z7-10-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/Cora-Z7-10-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dgn_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dgn_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dgn_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dgn_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1034.227 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1048.477 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 15 instances were transformed.
   FDR => FDRE: 12 instances
   RAMB16_S9 => RAMB18E1: 2 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1034.227 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1048.477 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1034.227 ; gain = 395.875
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1048.477 ; gain = 410.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1034.227 ; gain = 395.875
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1048.477 ; gain = 410.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0/inst. (constraint file  C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc, line 31).
-Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_0_100M/U0. (constraint file  C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc, line 39).
-Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/manager_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/S_AXI_VGA_BRAM_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/keyboard_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_0_100M. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/manager_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for design_1_i/manager_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/clk_wiz/inst. (constraint file  C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc, line 31).
+Applied set_property DONT_TOUCH = true for dgn_i/rst_clk_wiz_100M/U0. (constraint file  C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dont_touch.xdc, line 39).
+Applied set_property DONT_TOUCH = true for dgn_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/clk_wiz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/keyboard_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/manager_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/rst_clk_wiz_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/vga_bram_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/videomemlab_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/videomemlab_0_axi_periph. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1034.227 ; gain = 395.875
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1048.477 ; gain = 410.371
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
-INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/ace7/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1034.227 ; gain = 395.875
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1048.477 ; gain = 410.371
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -876,18 +876,18 @@ Detailed RTL Component Info :
 +---Registers : 
 	               64 Bit    Registers := 1     
 	               36 Bit    Registers := 2     
-	               32 Bit    Registers := 6     
+	               32 Bit    Registers := 3     
 	               16 Bit    Registers := 1     
 	               11 Bit    Registers := 1     
 	               10 Bit    Registers := 2     
 	                9 Bit    Registers := 2     
-	                8 Bit    Registers := 4     
+	                8 Bit    Registers := 6     
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 2     
-	                4 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 6     
-	                2 Bit    Registers := 10    
-	                1 Bit    Registers := 61    
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 57    
 +---Multipliers : 
 	                 4x31  Multipliers := 1     
 	                 6x31  Multipliers := 1     
@@ -897,10 +897,10 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     64 Bit        Muxes := 1     
 	   2 Input     36 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 3     
-	   4 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 2     
-	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
 	 113 Input      7 Bit        Muxes := 1     
 	   7 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 3     
@@ -912,9 +912,10 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 6     
 	   7 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 104   
+	   2 Input      1 Bit        Muxes := 99    
 	   7 Input      1 Bit        Muxes := 12    
 	   3 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
@@ -924,32 +925,6 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module asymmetric_ram 
-Detailed RTL Component Info : 
-+---Registers : 
-	                8 Bit    Registers := 2     
-+---RAMs : 
-	             300K Bit         RAMs := 1     
-Module vga_sync 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     10 Bit       Adders := 2     
-+---Registers : 
-	               10 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
-+---Muxes : 
-	   2 Input     10 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 2     
-	   4 Input      4 Bit        Muxes := 1     
-Module S_AXI_VGA_BRAM_v1_0_S00_AXI 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 2     
-	               16 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 6     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 5     
 Module debounce 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -972,14 +947,12 @@ Detailed RTL Component Info :
 Module keyboard_v1_0_S00_AXI 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 4     
-	                4 Bit    Registers := 2     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 7     
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
-	   4 Input     32 Bit        Muxes := 4     
-	   2 Input      1 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 Module char8x12_lookup_table 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -998,7 +971,8 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
@@ -1009,6 +983,8 @@ Detailed RTL Component Info :
 	                 6x31  Multipliers := 1     
 	                31x31  Multipliers := 1     
 +---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
 	   7 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 3     
 	   7 Input      6 Bit        Muxes := 1     
@@ -1021,8 +997,53 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit        Muxes := 63    
 	   7 Input      1 Bit        Muxes := 12    
 	   3 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 2     
+Module lpf 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module upcnt_n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sequence_psr 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
+Module asymmetric_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---RAMs : 
+	             300K Bit         RAMs := 1     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+Module vga_bram_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
 Module axi_crossbar_v2_1_20_addr_decoder 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -1079,24 +1100,6 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
-Module lpf 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 3     
-Module upcnt_n 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      6 Bit       Adders := 1     
-+---Registers : 
-	                6 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module sequence_psr 
-Detailed RTL Component Info : 
-+---Registers : 
-	                3 Bit    Registers := 3     
-	                1 Bit    Registers := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -1113,12 +1116,9 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-DSP Report: Generating DSP U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/vga_sync_1/bram_addr_o, operation Mode is: C+A*(B:0x50).
-DSP Report: operator U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/vga_sync_1/bram_addr_o is absorbed into DSP U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/vga_sync_1/bram_addr_o.
-DSP Report: operator U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/vga_sync_1/bram_addr_o0 is absorbed into DSP U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/vga_sync_1/bram_addr_o.
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:166]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:166]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/0f2e/hdl/manager_v1_0_M00_AXI.vhd:166]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:166]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:166]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd:166]
 DSP Report: Generating DSP U0/manager_v1_0_M00_AXI_inst/R2, operation Mode is: (A:0x50)*B2.
 DSP Report: register U0/manager_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R2.
 DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R2.
@@ -1147,35 +1147,82 @@ DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/man
 DSP Report: Generating DSP U0/manager_v1_0_M00_AXI_inst/R3, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R3.
 DSP Report: operator U0/manager_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/manager_v1_0_M00_AXI_inst/R3.
-INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
-INFO: [Synth 8-4652] Swapped enable and write-enable on 8 RAM instances of RAM U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/BRAM_VGA/BRAM/ram_reg to conserve power
-INFO: [Synth 8-3886] merging instance 'design_1_i/S_AXI_VGA_BRAM_0/U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'design_1_i/S_AXI_VGA_BRAM_0/U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/S_AXI_VGA_BRAM_0/\U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
-INFO: [Synth 8-3886] merging instance 'design_1_i/S_AXI_VGA_BRAM_0/U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'design_1_i/S_AXI_VGA_BRAM_0/U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/S_AXI_VGA_BRAM_0/\U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
-INFO: [Synth 8-3886] merging instance 'design_1_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'design_1_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/keyboard_0/\U0/keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
-INFO: [Synth 8-3886] merging instance 'design_1_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'design_1_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1_i/keyboard_0/\U0/keyboard_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
-INFO: [Synth 8-3886] merging instance 'design_1_i/rst_clk_wiz_0_100M/U0/SEQ/pr_dec_reg[1]' (FD) to 'design_1_i/rst_clk_wiz_0_100M/U0/SEQ/bsr_dec_reg[1]'
-INFO: [Synth 8-3886] merging instance 'design_1_i/rst_clk_wiz_0_100M/U0/SEQ/bsr_dec_reg[1]' (FD) to 'design_1_i/rst_clk_wiz_0_100M/U0/SEQ/core_dec_reg[1]'
+DSP Report: Generating DSP U0/vga_bram_v1_0_S00_AXI_inst/Inst_VGA_BRAM/vga_sync_1/bram_addr_o, operation Mode is: C+A*(B:0x50).
+DSP Report: operator U0/vga_bram_v1_0_S00_AXI_inst/Inst_VGA_BRAM/vga_sync_1/bram_addr_o is absorbed into DSP U0/vga_bram_v1_0_S00_AXI_inst/Inst_VGA_BRAM/vga_sync_1/bram_addr_o.
+DSP Report: operator U0/vga_bram_v1_0_S00_AXI_inst/Inst_VGA_BRAM/vga_sync_1/bram_addr_o0 is absorbed into DSP U0/vga_bram_v1_0_S00_AXI_inst/Inst_VGA_BRAM/vga_sync_1/bram_addr_o.
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/4d88/hdl/axi_register_slice_v2_1_vl_rfs.v:721]
+INFO: [Synth 8-4652] Swapped enable and write-enable on 8 RAM instances of RAM U0/vga_bram_v1_0_S00_AXI_inst/Inst_VGA_BRAM/BRAM/ram_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/keyboard_0/\U0/keyboard_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[8]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[9]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[10]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[11]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[12]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[13]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[14]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[15]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[16]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[17]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[18]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[19]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[20]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[21]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[22]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[23]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[24]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[25]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[26]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[27]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[28]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[29]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[30]' (FDRE) to 'dgn_i/keyboard_0/U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/keyboard_0/\U0/keyboard_v1_0_S00_AXI_inst/axi_rdata_reg[31] )
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[8]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[9]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[10]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[11]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[12]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[13]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[14]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[15]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[16]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[17]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[18]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[19]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[20]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[21]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[22]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[23]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[24]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[25]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[26]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[27]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[28]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[29]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[30]' (FDRE) to 'dgn_i/manager_0/U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/manager_0/\U0/manager_v1_0_M00_AXI_inst/axi_wdata_reg[31] )
+INFO: [Synth 8-3886] merging instance 'dgn_i/rst_clk_wiz_100M/U0/SEQ/pr_dec_reg[1]' (FD) to 'dgn_i/rst_clk_wiz_100M/U0/SEQ/bsr_dec_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/rst_clk_wiz_100M/U0/SEQ/bsr_dec_reg[1]' (FD) to 'dgn_i/rst_clk_wiz_100M/U0/SEQ/core_dec_reg[1]'
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_AUX.ACT_HI_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
-WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_AUX.ACT_HI_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+INFO: [Synth 8-3886] merging instance 'dgn_i/vga_bram_0/U0/vga_bram_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'dgn_i/vga_bram_0/U0/vga_bram_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/vga_bram_0/\U0/vga_bram_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1034.227 ; gain = 395.875
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1048.477 ; gain = 410.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM:
-+---------------------+--------------------------------------+---------------+----------------+
-|Module Name          | RTL Object                           | Depth x Width | Implemented As | 
-+---------------------+--------------------------------------+---------------+----------------+
-|design_1_manager_0_0 | U0/manager_v1_0_M00_AXI_inst/U1/data | 512x7         | LUT            | 
-+---------------------+--------------------------------------+---------------+----------------+
++----------------+--------------------------------------+---------------+----------------+
+|Module Name     | RTL Object                           | Depth x Width | Implemented As | 
++----------------+--------------------------------------+---------------+----------------+
+|dgn_manager_0_0 | U0/manager_v1_0_M00_AXI_inst/U1/data | 512x7         | LUT            | 
++----------------+--------------------------------------+---------------+----------------+
 
 
 Block RAM: Preliminary Mapping  Report (see note below)
@@ -1188,19 +1235,19 @@ Block RAM: Preliminary Mapping  Report (see note below)
 Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
 
 DSP: Preliminary Mapping  Report (see note below)
-+---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name          | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|vga_sync             | C+A*(B:0x50)    | 10     | 7      | 7      | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-|design_1_manager_0_0 | (A:0x50)*B2     | 5      | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_manager_0_0 | (PCIN>>17)+A*B2 | 13     | 5      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|design_1_manager_0_0 | (A:0x50)*B2     | 7      | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_manager_0_0 | (PCIN>>17)+A*B2 | 13     | 7      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
-|design_1_manager_0_0 | A*(B:0xc)       | 13     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_manager_0_0 | (PCIN>>17)+A*B  | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_manager_0_0 | A*(B:0xc)       | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|design_1_manager_0_0 | (PCIN>>17)+A*B  | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dgn_manager_0_0 | (A:0x50)*B2     | 5      | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|dgn_manager_0_0 | (PCIN>>17)+A*B2 | 13     | 5      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|dgn_manager_0_0 | (A:0x50)*B2     | 7      | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|dgn_manager_0_0 | (PCIN>>17)+A*B2 | 13     | 7      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|dgn_manager_0_0 | A*(B:0xc)       | 13     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dgn_manager_0_0 | (PCIN>>17)+A*B  | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dgn_manager_0_0 | A*(B:0xc)       | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dgn_manager_0_0 | (PCIN>>17)+A*B  | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|vga_sync        | C+A*(B:0x50)    | 10     | 7      | 7      | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++----------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -1216,13 +1263,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1063.609 ; gain = 425.258
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1068.824 ; gain = 430.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1093.453 ; gain = 455.102
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1099.102 ; gain = 460.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1247,10 +1294,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:83]
-INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/design_1/ipshared/vga_sync.vhd:84]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/vga_sync.vhd:83]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.srcs/sources_1/bd/dgn/ipshared/b427/src/vga_sync.vhd:83]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1095.133 ; gain = 456.781
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1100.352 ; gain = 462.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1270,12 +1317,12 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6064] Net \U0/S_AXI_VGA_BRAM_v1_0_S00_AXI_inst/bram_wen  is driving 64 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net \U0/vga_bram_v1_0_S00_AXI_inst/we_reg_rep_n_0  is driving 32 big block pins (URAM, BRAM and DSP loads). Created 4 replicas of its driver. 
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1107.180 ; gain = 469.074
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1288,7 +1335,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1107.180 ; gain = 469.074
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1300,25 +1347,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1107.180 ; gain = 469.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1107.180 ; gain = 469.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1107.180 ; gain = 469.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1107.180 ; gain = 469.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1334,97 +1381,100 @@ Report Cell Usage:
 +------+-----------+------+
 |      |Cell       |Count |
 +------+-----------+------+
-|1     |BUFG       |     3|
-|2     |CARRY4     |    18|
-|3     |DSP48E1    |     1|
+|1     |BUFG       |     4|
+|2     |CARRY4     |    15|
+|3     |DSP48E1    |     2|
 |4     |DSP48E1_1  |     2|
-|5     |DSP48E1_2  |     2|
-|6     |DSP48E1_3  |     3|
-|7     |LUT1       |    21|
-|8     |LUT2       |    72|
-|9     |LUT3       |    38|
-|10    |LUT4       |   139|
-|11    |LUT5       |    73|
-|12    |LUT6       |   187|
+|5     |DSP48E1_2  |     3|
+|6     |DSP48E1_3  |     1|
+|7     |LUT1       |    19|
+|8     |LUT2       |    67|
+|9     |LUT3       |    40|
+|10    |LUT4       |   149|
+|11    |LUT5       |    59|
+|12    |LUT6       |   163|
 |13    |MMCME2_ADV |     1|
 |14    |MUXF7      |    14|
-|15    |MUXF8      |     7|
-|16    |RAMB36E1   |     8|
-|17    |RAMB36E1_2 |     8|
-|18    |SRL16      |     1|
-|19    |FDCE       |    23|
-|20    |FDR        |     8|
-|21    |FDRE       |   445|
-|22    |FDSE       |     8|
-|23    |IBUF       |     4|
-|24    |OBUF       |    14|
+|15    |MUXF8      |     4|
+|16    |RAMB16_S9  |     2|
+|17    |RAMB36E1   |     8|
+|18    |RAMB36E1_2 |     8|
+|19    |SRL16      |     1|
+|20    |FDCE       |    23|
+|21    |FDR        |     8|
+|22    |FDRE       |   323|
+|23    |FDSE       |     5|
+|24    |IBUF       |     4|
+|25    |OBUF       |    14|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+-------------------------------------------+-----------------------------------------------+------+
 |      |Instance                                   |Module                                         |Cells |
 +------+-------------------------------------------+-----------------------------------------------+------+
-|1     |top                                        |                                               |  1100|
-|2     |  design_1_i                               |design_1                                       |  1083|
-|3     |    S_AXI_VGA_BRAM_0                       |design_1_S_AXI_VGA_BRAM_0_0                    |   149|
-|4     |      U0                                   |S_AXI_VGA_BRAM_v1_0                            |   149|
-|5     |        S_AXI_VGA_BRAM_v1_0_S00_AXI_inst   |S_AXI_VGA_BRAM_v1_0_S00_AXI                    |   149|
-|6     |          BRAM_VGA                         |VGA_BRAM                                       |    96|
-|7     |            BRAM                           |asymmetric_ram                                 |    25|
-|8     |            vga_sync_1                     |vga_sync                                       |    71|
-|9     |    clk_wiz_0                              |design_1_clk_wiz_0_0                           |     5|
-|10    |      inst                                 |design_1_clk_wiz_0_0_clk_wiz                   |     5|
-|11    |    keyboard_0                             |design_1_keyboard_0_0                          |   292|
-|12    |      U0                                   |keyboard_v1_0                                  |   292|
-|13    |        keyboard_v1_0_S00_AXI_inst         |keyboard_v1_0_S00_AXI                          |   292|
-|14    |          U0                               |ps2_keyboard                                   |   132|
-|15    |            debounce_ps2_clk               |debounce                                       |    26|
-|16    |            debounce_ps2_data              |debounce_1                                     |    25|
-|17    |    manager_0                              |design_1_manager_0_0                           |   306|
-|18    |      U0                                   |manager_v1_0                                   |   306|
-|19    |        manager_v1_0_M00_AXI_inst          |manager_v1_0_M00_AXI                           |   306|
-|20    |          U1                               |scancode2ascii                                 |    51|
-|21    |    manager_0_axi_periph                   |design_1_manager_0_axi_periph_1                |   266|
-|22    |      xbar                                 |design_1_xbar_1                                |   266|
-|23    |        inst                               |axi_crossbar_v2_1_20_axi_crossbar              |   266|
-|24    |          \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_20_crossbar_sasd             |   266|
-|25    |            addr_arbiter_inst              |axi_crossbar_v2_1_20_addr_arbiter_sasd         |   123|
-|26    |            \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_20_decerr_slave              |    11|
-|27    |            reg_slice_r                    |axi_register_slice_v2_1_19_axic_register_slice |   112|
-|28    |            splitter_ar                    |axi_crossbar_v2_1_20_splitter__parameterized0  |     2|
-|29    |            splitter_aw                    |axi_crossbar_v2_1_20_splitter                  |    10|
-|30    |    rst_clk_wiz_0_100M                     |design_1_rst_clk_wiz_0_100M_0                  |    65|
-|31    |      U0                                   |proc_sys_reset                                 |    65|
-|32    |        EXT_LPF                            |lpf                                            |    22|
-|33    |          \ACTIVE_HIGH_AUX.ACT_HI_AUX      |cdc_sync                                       |     5|
-|34    |          \ACTIVE_HIGH_EXT.ACT_HI_EXT      |cdc_sync_0                                     |     6|
-|35    |        SEQ                                |sequence_psr                                   |    38|
-|36    |          SEQ_COUNTER                      |upcnt_n                                        |    13|
+|1     |top                                        |                                               |   939|
+|2     |  dgn_i                                    |dgn                                            |   922|
+|3     |    clk_wiz                                |dgn_clk_wiz_0                                  |     6|
+|4     |      inst                                 |dgn_clk_wiz_0_clk_wiz                          |     6|
+|5     |    keyboard_0                             |dgn_keyboard_0_0                               |   124|
+|6     |      U0                                   |keyboard_v1_0                                  |   124|
+|7     |        keyboard_v1_0_S00_AXI_inst         |keyboard_v1_0_S00_AXI                          |   124|
+|8     |          U0                               |ps2_keyboard                                   |   106|
+|9     |            debounce_ps2_clk               |debounce                                       |    26|
+|10    |            debounce_ps2_data              |debounce_1                                     |    25|
+|11    |    manager_0                              |dgn_manager_0_0                                |   317|
+|12    |      U0                                   |manager_v1_0                                   |   317|
+|13    |        manager_v1_0_M00_AXI_inst          |manager_v1_0_M00_AXI                           |   317|
+|14    |          U0                               |char8x12_lookup_table                          |    30|
+|15    |          U1                               |scancode2ascii                                 |    51|
+|16    |    rst_clk_wiz_100M                       |dgn_rst_clk_wiz_100M_0                         |    62|
+|17    |      U0                                   |proc_sys_reset                                 |    62|
+|18    |        EXT_LPF                            |lpf                                            |    19|
+|19    |          \ACTIVE_HIGH_EXT.ACT_HI_EXT      |cdc_sync                                       |     5|
+|20    |          \ACTIVE_LOW_AUX.ACT_LO_AUX       |cdc_sync_0                                     |     6|
+|21    |        SEQ                                |sequence_psr                                   |    38|
+|22    |          SEQ_COUNTER                      |upcnt_n                                        |    13|
+|23    |    vga_bram_0                             |dgn_vga_bram_0_0                               |   132|
+|24    |      U0                                   |vga_bram_v1_0                                  |   132|
+|25    |        vga_bram_v1_0_S00_AXI_inst         |vga_bram_v1_0_S00_AXI                          |   132|
+|26    |          Inst_VGA_BRAM                    |VGA_BRAM                                       |    89|
+|27    |            BRAM                           |asymmetric_ram                                 |    18|
+|28    |            vga_sync_1                     |vga_sync                                       |    71|
+|29    |    videomemlab_0_axi_periph               |dgn_videomemlab_0_axi_periph_0                 |   281|
+|30    |      xbar                                 |dgn_xbar_0                                     |   281|
+|31    |        inst                               |axi_crossbar_v2_1_20_axi_crossbar              |   281|
+|32    |          \gen_sasd.crossbar_sasd_0        |axi_crossbar_v2_1_20_crossbar_sasd             |   281|
+|33    |            addr_arbiter_inst              |axi_crossbar_v2_1_20_addr_arbiter_sasd         |   121|
+|34    |            \gen_decerr.decerr_slave_inst  |axi_crossbar_v2_1_20_decerr_slave              |    12|
+|35    |            reg_slice_r                    |axi_register_slice_v2_1_19_axic_register_slice |   129|
+|36    |            splitter_ar                    |axi_crossbar_v2_1_20_splitter__parameterized0  |     4|
+|37    |            splitter_aw                    |axi_crossbar_v2_1_20_splitter                  |     7|
 +------+-------------------------------------------+-----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1107.180 ; gain = 469.074
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 158 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1099.898 ; gain = 427.789
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1099.898 ; gain = 461.547
+Synthesis finished with 0 errors, 0 critical warnings and 240 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1107.180 ; gain = 420.285
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1107.180 ; gain = 469.074
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1115.953 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1120.031 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 9 instances were transformed.
+  A total of 11 instances were transformed.
   FDR => FDRE: 8 instances
+  RAMB16_S9 => RAMB18E1: 2 instances
   SRL16 => SRL16E: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-181 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+223 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 1115.953 ; gain = 729.500
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1115.953 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1120.031 ; gain = 733.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1120.031 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/design_1_wrapper.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 26 15:58:04 2022...
+INFO: [Common 17-1381] The checkpoint 'C:/Users/caraccmv/Desktop/git/EE316P6/SystemFinal/SystemFinal.runs/synth_2/dgn_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dgn_wrapper_utilization_synth.rpt -pb dgn_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 27 19:29:48 2022...

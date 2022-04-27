@@ -1,0 +1,21 @@
+vhdl xil_defaultlib  \
+"../../../bd/dgn/ipshared/ce79/src/debounce.vhd" \
+"../../../bd/dgn/ipshared/ce79/hdl/keyboard_v1_0_S00_AXI.vhd" \
+"../../../bd/dgn/ipshared/ce79/src/ps2_keyboard.vhd" \
+"../../../bd/dgn/ipshared/ce79/hdl/keyboard_v1_0.vhd" \
+"../../../bd/dgn/ip/dgn_keyboard_0_0/sim/dgn_keyboard_0_0.vhd" \
+"../../../bd/dgn/ipshared/80e2/src/char8x12_lookup_table.vhd" \
+"../../../bd/dgn/ipshared/80e2/hdl/manager_v1_0_M00_AXI.vhd" \
+"../../../bd/dgn/ipshared/80e2/src/scancode2ascii.vhd" \
+"../../../bd/dgn/ipshared/80e2/hdl/manager_v1_0.vhd" \
+"../../../bd/dgn/ip/dgn_manager_0_0/sim/dgn_manager_0_0.vhd" \
+"../../../bd/dgn/ip/dgn_rst_clk_wiz_100M_0/sim/dgn_rst_clk_wiz_100M_0.vhd" \
+"../../../bd/dgn/ipshared/b427/src/VGA_BRAM.vhd" \
+"../../../bd/dgn/ipshared/b427/src/asymmetric_ram.vhd" \
+"../../../bd/dgn/ipshared/b427/hdl/vga_bram_v1_0_S00_AXI.vhd" \
+"../../../bd/dgn/ipshared/b427/src/vga_sync.vhd" \
+"../../../bd/dgn/ipshared/b427/hdl/vga_bram_v1_0.vhd" \
+"../../../bd/dgn/ip/dgn_vga_bram_0_0/sim/dgn_vga_bram_0_0.vhd" \
+"../../../bd/dgn/sim/dgn.vhd" \
+
+nosort

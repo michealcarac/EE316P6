@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7z010clg400-1" LaunchTime="1651003037">
-  <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="design_1_wrapper_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="design_1_wrapper_reports.tcl"/>
-  <File Type="RDS-RDS" Name="design_1_wrapper.vds"/>
-  <File Type="RDS-UTIL" Name="design_1_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="design_1_wrapper_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="design_1_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="design_1_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="design_1_wrapper_timing_summary_synth.pb"/>
+<GenRun Id="synth_2" LaunchPart="xc7z010clg400-1" LaunchTime="1651102140">
+  <File Type="PA-TCL" Name="dgn_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="dgn_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="dgn_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="dgn_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="dgn_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="dgn_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="dgn_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="dgn_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="dgn_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/bd/design_1/design_1.bd">
+    <File Path="$PSRCDIR/sources_1/bd/dgn/dgn.bd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.vhd">
+    <File Path="$PSRCDIR/sources_1/bd/dgn/hdl/dgn_wrapper.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -26,7 +26,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="design_1_wrapper"/>
+      <Option Name="TopModule" Val="dgn_wrapper"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
